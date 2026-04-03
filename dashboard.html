@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Dashboard - EscapeX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-theme="dark">
+
+    <div class="d-flex min-vh-100">
+        <!-- Sidebar -->
+        <aside class="sidebar-theme border-end d-none d-md-flex flex-column" id="sidebar" style="width: 260px; border-color: var(--border-color) !important;">
+            <div class="p-4 border-bottom" style="border-color: var(--border-color) !important;">
+                <a class="navbar-brand text-theme d-flex align-items-center gap-2" href="index.html">
+                    <i class="bi bi-box-fill text-primary"></i> EscapeX
+                </a>
+            </div>
+            
+            <div class="p-4 flex-grow-1">
+                <div class="d-flex align-items-center gap-3 mb-5">
+                    <div class="bg-primary text-dark rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">
+                        GR
+                    </div>
+                    <div>
+                        <h6 class="mb-0 text-theme font-heading">Group Alpha</h6>
+                        <small class="text-muted">Rank: Explorer</small>
+                    </div>
+                </div>
+
+                <nav class="nav flex-column gap-2">
+                    <a href="dashboard.html" class="nav-link text-theme ps-0 active d-flex align-items-center gap-3"><i class="bi bi-grid-1x2 text-primary"></i> Hub Overview</a>
+                    <a href="#" class="nav-link text-muted ps-0 d-flex align-items-center gap-3"><i class="bi bi-calendar-event"></i> My Bookings</a>
+                    <a href="#" class="nav-link text-muted ps-0 d-flex justify-content-between align-items-center">
+                        <span class="d-flex gap-3"><i class="bi bi-file-earmark-check"></i> Waivers</span>
+                        <span class="badge bg-danger rounded-pill">1 Action</span>
+                    </a>
+                    <a href="#" class="nav-link text-muted ps-0 d-flex align-items-center gap-3"><i class="bi bi-graph-up"></i> Win/Loss Log</a>
+                    <a href="#" class="nav-link text-muted ps-0 d-flex align-items-center gap-3"><i class="bi bi-trophy"></i> Leaderboards</a>
+                </nav>
+            </div>
+            
+            <div class="p-4 border-top" style="border-color: var(--border-color) !important;">
+                <a href="login.html" class="btn btn-secondary w-100"><i class="bi bi-power"></i> Log Out</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-grow-1 p-3 p-lg-5 overflow-auto bg-color">
+            <header class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="mb-0 font-heading">Dashboard Sync</h2>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-outline-secondary d-md-none" id="sidebarToggle"><i class="bi bi-list"></i></button>
+                    <a href="services.html" class="btn btn-primary d-none d-sm-block">Book Next Room</a>
+                </div>
+            </header>
+
+            <!-- Metrics -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-3 col-sm-6">
+                    <div class="puzzle-card p-4">
+                        <h6 class="text-muted mb-2 tracking-widest text-uppercase">Matches</h6>
+                        <h3 class="mb-0 font-heading">08</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="puzzle-card p-4">
+                        <h6 class="text-muted mb-2 tracking-widest text-uppercase">Escapes</h6>
+                        <h3 class="mb-0 font-heading text-primary">06</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="puzzle-card p-4">
+                        <h6 class="text-muted mb-2 tracking-widest text-uppercase">Win Rate</h6>
+                        <h3 class="mb-0 font-heading text-secondary">75%</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="puzzle-card p-4 border-danger">
+                        <h6 class="text-muted mb-2 tracking-widest text-uppercase">Next Game</h6>
+                        <h3 class="mb-0 font-heading">OCT 24 <i class="bi bi-exclamation-circle text-danger ms-2 fs-5"></i></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Area -->
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="puzzle-card p-4 h-100">
+                        <h4 class="font-heading mb-4 border-bottom pb-3" style="border-color: var(--border-color) !important;">Active Directive</h4>
+                        
+                        <div class="d-flex flex-column flex-md-row gap-4 align-items-center">
+                            <div class="rounded w-100 border border-secondary" style="background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=300&q=80') center/cover; height: 150px; max-width: 250px;"></div>
+                            <div class="flex-grow-1 w-100">
+                                <h5 class="font-heading mb-1 text-primary">The Reactor Core</h5>
+                                <p class="text-muted small mb-3">Group of 4 • 8:00 PM • Friday, Oct 24</p>
+                                
+                                <div class="alert bg-theme-accent border-danger text-theme d-flex flex-column flex-sm-row justify-content-between align-items-sm-center" role="alert" style="background: var(--faq-section-bg);">
+                                    <span class="small mb-2 mb-sm-0"><i class="bi bi-file-earmark-medical text-danger"></i> Group Waiver Signature Pending</span>
+                                    <button class="btn btn-sm btn-outline-primary sign-waiver-btn">Sign Digital Waiver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="puzzle-card p-4 h-100">
+                        <h4 class="font-heading mb-4 border-bottom pb-3" style="border-color: var(--border-color) !important;">Recent Logs</h4>
+                        
+                        <div class="d-flex justify-content-between mb-3 pb-2 border-bottom" style="border-color: var(--border-color) !important;">
+                            <div>
+                                <h6 class="mb-0 text-theme font-heading">Cyber Heist</h6>
+                                <small class="text-muted">Oct 12</small>
+                            </div>
+                            <div class="text-end">
+                                <span class="badge bg-primary text-white d-block mb-1">Escaped</span>
+                                <small class="text-muted">42:15</small>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mb-3 pb-2 border-bottom" style="border-color: var(--border-color) !important;">
+                            <div>
+                                <h6 class="mb-0 text-theme font-heading">Asylum 2.0</h6>
+                                <small class="text-muted">Sep 05</small>
+                            </div>
+                            <div class="text-end">
+                                <span class="badge bg-danger d-block mb-1">Failed</span>
+                                <small class="text-muted">Trapped</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

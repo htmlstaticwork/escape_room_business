@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Rooms - EscapeX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-theme="dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <i class="bi bi-box-fill"></i> EscapeX
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex align-items-center" style="gap:2px;">
+                        <button class="rtl-toggle btn btn-sm btn-link text-white p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-translate"></i></button>
+                        <button class="theme-toggle btn btn-sm btn-link text-white p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+                    </div>
+                    <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                    <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-5 text-center text-white" style="background: linear-gradient(120deg, rgba(0,0,0,0.6) 20%, rgba(7,12,25,0.7) 100%), url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80') center/cover;">
+        <div class="container py-5">
+            <h1 class="display-3 font-heading mb-4">Select Your Trial</h1>
+            <p class="lead mx-auto text-light mb-0" style="max-width: 600px;">Review the active simulations below. Group participation is strictly required.</p>
+        </div>
+    </header>
+
+    <section class="section-padding bg-color">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+                <button class="btn btn-primary px-4">All Protocols</button>
+                <button class="btn btn-secondary px-4">Sci-Fi</button>
+                <button class="btn btn-secondary px-4">Horror</button>
+                <button class="btn btn-secondary px-4">Mystery</button>
+            </div>
+
+            <div class="row g-5">
+                <!-- Room 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="puzzle-card h-100">
+                        <!-- Image placeholder matching the dark neon theme -->
+                        <div class="w-100" style="height: 250px; background: url('https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary text-dark font-heading">Protocol: Sci-Fi</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 3-6 Players</span>
+                            </div>
+                            <h4 class="font-heading text-white">The Cyber Heist</h4>
+                            <p class="text-muted small mb-4">Infiltrate the megacorp's server bank. You will need to bypass laser grids and sync terminal inputs simultaneously.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="puzzle-card h-100">
+                        <div class="w-100" style="height: 250px; background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-danger font-heading">Protocol: Thriller</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 4-8 Players</span>
+                            </div>
+                            <h4 class="font-heading text-white">The Reactor Core</h4>
+                            <p class="text-muted small mb-4">The core is melting down. Half your team will be locked in the control room, the other half in processing. Communicate or burn.</p>
+                            <a href="service-details.html" class="btn btn-outline-danger w-100">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="puzzle-card h-100">
+                        <div class="w-100" style="height: 250px; background: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge" style="background-color: var(--secondary-color);">Protocol: Horror</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill" style="color: var(--secondary-color);"></i> 2-5 Players</span>
+                            </div>
+                            <h4 class="font-heading text-white">Forsaken Asylum</h4>
+                            <p class="text-muted small mb-4">Explore the abandoned ward in absolute darkness. Sound sensors track your movement. Stay quiet, stay together.</p>
+                            <a href="service-details.html" class="btn btn-outline-secondary w-100">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-padding content-section bg-color">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-lg-8">
+                    <p class="text-primary tracking-widest text-uppercase font-heading mb-2">Powered by our portal</p>
+                    <h2 class="font-heading mb-3">Three site experiences that support every mission</h2>
+                    <p class="text-muted">The EscapeX website keeps schedules, analytics, and story drops in sync so your team starts every room with confidence.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="puzzle-card p-4 h-100">
+                        <h5 class="text-white mb-3">Live Booking Hub</h5>
+                        <p class="text-muted small">See real-time availability, reserve slots, and add optional extras in one click. The hub also emails automated reminders linked to your digital pass.</p>
+                        <a href="contact.html" class="link-primary small">Contact a host →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="puzzle-card p-4 h-100">
+                        <h5 class="text-white mb-3">Digital Pass</h5>
+                        <p class="text-muted small">Every player receives a portal pass that tracks successful puzzles, stores equipment notes, and unlocks loyalty rewards for mystery bundles.</p>
+                        <a href="dashboard.html" class="link-primary small">View your dashboard →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="puzzle-card p-4 h-100">
+                        <h5 class="text-white mb-3">Story &amp; Intel</h5>
+                        <p class="text-muted small">Our blog publishes mission hints, development diaries, and community leaderboards. Follow it for sneak peeks and world-building drops between visits.</p>
+                        <a href="blog.html" class="link-primary small">Read the blog →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding content-section bg-color">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8 text-center">
+                    <p class="text-primary tracking-widest text-uppercase font-heading mb-2">Portal Integrations</p>
+                    <h2 class="font-heading mb-3">The web control room for every reservation</h2>
+                    <p class="text-dark mb-4">Our website ties into calendar APIs, CRM platforms, and the automation scripts that keep your hosts synchronized across rooms.</p>
+                    <ul class="list-unstyled text-dark small mx-auto" style="max-width: 360px;">
+                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> Smart calendar syncing with instant conflict resolution.</li>
+                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> API hooks for your team's reporting tools and dashboards.</li>
+                        <li class="mb-3"><i class="bi bi-check-circle text-primary me-2"></i> One-click invite links that refresh leaderboard data in real time.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding content-section bg-color">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-primary tracking-widest text-uppercase font-heading mb-2">Web Intelligence</p>
+                <h2 class="font-heading mb-3">Insights & Support Delivered Online</h2>
+                <p class="text-muted">Dashboards, analytics, and live chat are embedded directly on the site so your team can optimize strategy between sessions.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="puzzle-card p-4 h-100 text-center">
+                        <i class="bi bi-bar-chart-line text-primary fs-2 mb-3"></i>
+                        <h5 class="text-white mb-2">Performance Analytics</h5>
+                        <p class="text-muted small">Track success rates per puzzle type and compare team profiles across every protocol.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="puzzle-card p-4 h-100 text-center">
+                        <i class="bi bi-chat-dots text-primary fs-2 mb-3"></i>
+                        <h5 class="text-white mb-2">Live Host Support</h5>
+                        <p class="text-muted small">Message a host or request hints directly from the booking page without picking up the phone.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="puzzle-card p-4 h-100 text-center">
+                        <i class="bi bi-shield-lock text-primary fs-2 mb-3"></i>
+                        <h5 class="text-white mb-2">Security Audits</h5>
+                        <p class="text-muted small">Access compliance reports, privacy settings, and emergency protocols straight from your dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4 bg-dark text-white">
+        <div class="container">
+            <div class="row g-5 mb-4">
+
+                <!-- Col 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand text-white d-flex align-items-center gap-2 mb-3 h4" href="index.html">
+                        <i class="bi bi-box-fill text-primary"></i> EscapeX
+                    </a>
+                    <p class="text-white-50 small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring your team, test your minds, escape the grid.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="mb-3 tracking-widest text-primary text-uppercase">Quick Links</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white-50 text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white-50 text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Info -->
+                <div class="col-lg-3 col-md-3 col-6">
+                    <h6 class="mb-3 tracking-widest text-primary text-uppercase">Contact Info</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-3 d-flex align-items-start gap-2">
+                            <i class="bi bi-envelope mt-1 text-primary"></i>
+                            <span class="text-white-50">info@escapex.io</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start gap-2">
+                            <i class="bi bi-geo-alt mt-1 text-primary"></i>
+                            <span class="text-white-50">Level 4, Sector B<br>Neo-District 9, NY 10001</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start gap-2">
+                            <i class="bi bi-clock mt-1 text-primary"></i>
+                            <span class="text-white-50">Tue - Sun, 14:00 - 23:00</span>
+                        </li>
+                        <li class="d-flex align-items-start gap-2">
+                            <i class="bi bi-telephone mt-1 text-primary"></i>
+                            <span class="text-white-50">+1 (800) ESC-A-PEX</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="mb-3 tracking-widest text-primary text-uppercase">Newsletter</h6>
+                    <p class="text-white-50 small mb-3">Get hints and early access to new room themes.</p>
+                    <form class="d-flex gap-2 mb-0">
+                        <input type="email" class="form-control form-control-sm text-white footer-newsletter-input" placeholder="Email" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.2);" required>
+                        <button class="btn btn-primary btn-sm px-3" type="submit">Join</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="border-top pt-4 d-flex flex-wrap justify-content-between align-items-center text-white-50 small gap-2" style="border-color: rgba(255,255,255,0.1) !important;">
+                <span class="text-white-50">&copy; 2026 EscapeX Facility. All rights reserved.</span>
+                <span>
+                    <a href="login.html" class="text-white-50 text-decoration-none me-3">Login</a>
+                    <a href="dashboard.html" class="text-white-50 text-decoration-none me-3">Dashboard</a>
+                    <a href="coming-soon.html" class="text-white-50 text-decoration-none">Coming Soon</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

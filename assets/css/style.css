@@ -1,0 +1,341 @@
+:root {
+  /* Branding Colors - Mysterious & Exciting */
+  --primary-color: #00ffcc; /* Neon Teal for active elements */
+  --secondary-color: #8a2be2; /* Deep Purple for mysterious vibes */
+  --accent-color: #ff0055; /* Neon Pink/Red for urgency/warnings */
+  
+  /* Light Mode (default but strongly themed) */
+  --bg-color: #f0f4f8;
+  --text-color: #0f172a;
+  --card-bg: #ffffff;
+  --border-color: #cbd5e1;
+  --muted-color: rgba(255, 255, 255, 0.6);
+  --faq-section-bg: #edf2f7;
+  --faq-accordion-bg: #ffffff;
+  --faq-accordion-hover: #f4f6fb;
+  --faq-accordion-border: rgba(15, 23, 42, 0.1);
+  --faq-accordion-text: #0f172a;
+  --faq-accordion-body-bg: #fdfdff;
+  --faq-accordion-body-text: #1e293b;
+  
+  /* Spacing System (8px based) */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 48px;
+  --spacing-6: 64px;
+  
+  /* Typography */
+  --font-base: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  --muted-color: #64748b;
+}
+
+[data-theme="dark"] {
+  --bg-color: #050505;
+  --text-color: #f1f5f9;
+  --card-bg: #121212;
+  --border-color: #1e293b;
+  --muted-color: rgba(255, 255, 255, 0.6);
+  --faq-section-bg: #02050f;
+  --faq-accordion-bg: #10182a;
+  --faq-accordion-hover: #060d1c;
+  --faq-accordion-border: rgba(255, 255, 255, 0.1);
+  --faq-accordion-text: #e2e8f0;
+  --faq-accordion-body-bg: #050a14;
+  --faq-accordion-body-text: #cbd5f5;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Typography & Layout */
+.section-padding { padding: var(--spacing-6) 0; }
+.tracking-widest { letter-spacing: 3px; }
+
+.section-padding.content-section {
+  background-color: #ffffff;
+  color: #020617;
+}
+
+[data-theme="dark"] .section-padding.content-section {
+  background-color: #ffffff;
+  color: #020617;
+}
+
+.content-section .text-muted {
+  color: #020617;
+}
+
+.content-section .puzzle-card .text-muted {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+[data-theme="light"] .content-section .puzzle-card .text-muted small {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Survivor Logs section background override */
+.section-padding.bg-dark {
+  background-color: #0b1a32 !important;
+}
+
+.section-padding.bg-dark h2,
+.section-padding.bg-dark .carousel-item h4,
+.section-padding.bg-dark .carousel-item p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.section-padding.bg-dark .carousel-control-prev-icon,
+.section-padding.bg-dark .carousel-control-next-icon {
+  filter: invert(1) hue-rotate(180deg) brightness(1.2);
+}
+
+/* Featured Rooms quality label injection (CSS only, no HTML changes) */
+.puzzle-card .p-4 h4::after {
+  content: "Quality: Premium";
+  display: block;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  margin-top: 0.35rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Website service section banners added via CSS pseudo-element (no HTML changes) */
+/* Navbar */
+.navbar {
+  background: rgba(5, 5, 5, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: none;
+}
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--primary-color) !important;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.nav-link {
+  color: #e2e8f0 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(19, 78, 249, 0.5);
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color) !important;
+  text-shadow: 0 0 12px rgba(0, 255, 204, 0.6);
+}
+
+/* Buttons */
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 0; /* Boxy puzzle look */
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #000;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #00cca3;
+  border-color: #00cca3;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--secondary-color);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+}
+
+/* Components/Cards */
+.puzzle-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.puzzle-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+.puzzle-card:hover::before { transform: scaleY(1); }
+.puzzle-card:hover { transform: translateY(-5px); border-color: var(--primary-color); }
+
+.content-section .puzzle-card.rounded-4 {
+  border: none;
+}
+.content-section .puzzle-card.rounded-4::before {
+  display: none;
+}
+
+/* Accordion FAQ overrides for brighter cards */
+.accordion-button {
+  background-color: #fff;
+  color: #0f172a;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: none;
+  font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #f8fafc;
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+.accordion-button::after {
+  color: var(--primary-color);
+}
+.accordion-body {
+  background-color: #fff;
+  color: #475569;
+  border: 1px solid var(--border-color);
+  border-top: none;
+}
+
+/* Forms */
+.form-control {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 0;
+}
+.form-control:focus {
+  background-color: transparent;
+  color: var(--text-color);
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-color);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+.preloader-circle {
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--border-color);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* RTL */
+[dir="rtl"] .puzzle-card::before { left: auto; right: 0; }
+
+/* Footer Newsletter Input Placeholder Contrast Fix */
+.footer-newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+    opacity: 1; /* Firefox */
+}
+.footer-newsletter-input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.footer-newsletter-input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Footer Links Hover */
+footer a.text-white-50 {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+footer a.text-white-50:hover {
+    color: var(--bs-primary) !important;
+    transform: translateX(4px);
+}
+
+/* Footer Social Icons Hover */
+footer .d-flex.gap-2 a.btn.rounded-circle {
+    transition: all 0.3s ease;
+}
+footer .d-flex.gap-2 a.btn.rounded-circle:hover {
+    background: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+/* Fix Bootstrap text-muted contrast for theme switching */
+.text-muted {
+    color: var(--muted-color) !important;
+}
+
+.faq-section {
+  background-color: var(--faq-section-bg);
+}
+.faq-section .accordion-button {
+  background: var(--faq-accordion-bg);
+  color: var(--faq-accordion-text);
+  border: 1px solid var(--faq-accordion-border);
+  border-radius: 0.45rem;
+  margin-bottom: 0.4rem;
+}
+.faq-section .accordion-button:not(.collapsed) {
+  background: var(--faq-accordion-hover);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+}
+.faq-section .accordion-button::after {
+  filter: invert(100%);
+}
+.faq-section .accordion-body {
+  background: var(--faq-accordion-body-bg);
+  color: var(--faq-accordion-body-text);
+  border: 1px solid var(--faq-accordion-border);
+  border-top: none;
+}
