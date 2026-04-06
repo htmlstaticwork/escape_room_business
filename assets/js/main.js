@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const root = document.documentElement;
     const body = document.body;
     
-    // Check local storage or system preference
-    const isDarkMode = localStorage.getItem('theme') === 'dark' || 
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    // Check local storage or default to light
+    const savedTheme = localStorage.getItem('theme');
+    const isDarkMode = savedTheme === 'dark';
         
     if (isDarkMode) {
         body.setAttribute('data-theme', 'dark');
@@ -77,4 +77,27 @@ document.addEventListener("DOMContentLoaded", () => {
         form.classList.add('was-validated')
         }, false)
     })
+
+    // 5. Back to Top Button
+    const backToTop = document.createElement('button');
+    backToTop.id = 'backToTop';
+    backToTop.innerHTML = '<i class="bi bi-arrow-up"></i>';
+    backToTop.title = 'Back to Top';
+    document.body.appendChild(backToTop);
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
+

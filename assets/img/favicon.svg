@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16 16">
+  <style>
+    .brand-box { fill: #00ffcc; }
+  </style>
+  <!-- Exact brand icon shape from EscapeX logo -->
+  <path class="brand-box" d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.238zm-7.5 10.522V7.238l-6.5-2.6v7.922l6.5 2.6z"/>
+</svg>
