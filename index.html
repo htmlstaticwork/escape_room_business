@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EscapeX - Immersive Group Escape Rooms</title>
     <meta name="description" content="Engaging and puzzling escape rooms that demand teamwork. Can your group survive?">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 </head>
+
 <body data-theme="light">
     <!-- Preloader -->
-    <div id="preloader"><div class="preloader-circle"></div></div>
+    <div id="preloader">
+        <div class="preloader-circle"></div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
@@ -28,11 +34,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
-                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <a class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown">Home</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item active" href="index.html">Home 1</a></li>
                             <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
                         </ul>
                     </li>
@@ -44,8 +51,10 @@
                 </ul>
                 <div class="d-flex align-items-center gap-3 navbar-actions">
                     <div class="d-flex align-items-center" style="gap:2px;">
-                        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-translate"></i></button>
-                        <button class="theme-toggle btn btn-sm btn-link text-theme p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+                        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1"
+                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-translate"></i></button>
+                        <button class="theme-toggle btn btn-sm btn-link text-theme p-1"
+                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
                     </div>
                     <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
                     <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
@@ -55,18 +64,24 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="section-padding min-vh-100 d-flex align-items-center position-relative" style="background: var(--hero-overlay), url('https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1920&q=80') center/cover;">
+    <section class="section-padding min-vh-100 d-flex align-items-center position-relative"
+        style="background: var(--hero-overlay), url('https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container text-center position-relative" style="z-index: 2; color: var(--text-color);">
             <p class="text-primary tracking-widest mb-3">YOUR MIND IS THE ONLY KEY</p>
-            <h1 class="display-3 mb-4" style="text-shadow: 0 0 20px rgba(0, 255, 204, 0.4);">Decode. Escape. Survive.</h1>
-            <p class="lead mx-auto mb-5" style="max-width: 600px;">Gather your group and face the ultimate test of logic and teamwork. Immersive physical puzzles where working together is the only way out.</p>
+            <h1 class="display-3 mb-4" style="text-shadow: 0 0 20px rgba(0, 255, 204, 0.4);">Decode. Escape. Survive.
+            </h1>
+            <p class="lead mx-auto mb-5" style="max-width: 600px;">Gather your group and face the ultimate test of logic
+                and teamwork. Immersive physical puzzles where working together is the only way out.</p>
             <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 align-items-center">
-                <a href="services.html" class="btn btn-primary btn-lg px-4 hero-cta-btn"><i class="bi bi-geo-alt-fill me-2"></i> Choose Room</a>
+                <a href="services.html" class="btn btn-primary btn-lg px-4 hero-cta-btn"><i
+                        class="bi bi-geo-alt-fill me-2"></i> Choose Room</a>
                 <a href="about.html" class="btn btn-secondary btn-lg px-4 hero-cta-btn">How It Works</a>
             </div>
         </div>
         <!-- Mysterious grid overlay -->
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: linear-gradient(var(--primary-color) 1px, transparent 1px), linear-gradient(90deg, var(--primary-color) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.05; z-index: 1;"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-image: linear-gradient(var(--primary-color) 1px, transparent 1px), linear-gradient(90deg, var(--primary-color) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.05; z-index: 1;">
+        </div>
     </section>
 
     <!-- Teaser Section -->
@@ -75,23 +90,36 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 text-center text-lg-start">
                     <h2 class="mb-4">Not Just Padlocks. <br><span class="text-primary">True Interactions.</span></h2>
-                    <p class="text-muted mb-4">We've eliminated standard combination locks. Our rooms react to weight, temperature, electrical currents, and synchronized group actions. You need every member of your team to solve the grid.</p>
+                    <p class="text-muted mb-4">We've eliminated standard combination locks. Our rooms react to weight,
+                        temperature, electrical currents, and synchronized group actions. You need every member of your
+                        team to solve the grid.</p>
                     <ul class="list-unstyled mb-5 d-inline-block text-start d-lg-block">
-                        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-cpu fs-3 text-primary"></i> <span>Automated physical puzzles</span></li>
-                        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-people fs-3 text-primary"></i> <span>Requires simultaneous group cooperation</span></li>
-                        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-graph-up fs-3 text-primary"></i> <span>Live leaderboard tracking via Dashboard</span></li>
+                        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-cpu fs-3 text-primary"></i>
+                            <span>Automated physical puzzles</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-people fs-3 text-primary"></i>
+                            <span>Requires simultaneous group cooperation</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-3"><i
+                                class="bi bi-graph-up fs-3 text-primary"></i> <span>Live leaderboard tracking via
+                                Dashboard</span></li>
                     </ul>
                     <div class="mt-2">
-                        <a href="services.html" class="btn btn-outline-primary" style="color: #6b7280;">Explore The Tech</a>
+                        <a href="services.html" class="btn btn-outline-primary" style="color: #6b7280;">Explore The
+                            Tech</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-3">
                         <div class="col-6">
-                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="Room Teaser 1" class="img-fluid rounded border border-secondary w-100 mb-3" style="filter: grayscale(80%) sepia(20%) hue-rotate(130deg);">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
+                                alt="Room Teaser 1" class="img-fluid rounded border border-secondary w-100 mb-3"
+                                style="filter: grayscale(80%) sepia(20%) hue-rotate(130deg);">
                         </div>
                         <div class="col-6 mt-5">
-                            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=80" alt="Room Teaser 2" class="img-fluid rounded border border-danger w-100" style="filter: grayscale(80%) sepia(20%) hue-rotate(300deg);">
+                            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=80"
+                                alt="Room Teaser 2" class="img-fluid rounded border border-danger w-100"
+                                style="filter: grayscale(80%) sepia(20%) hue-rotate(300deg);">
                         </div>
                     </div>
                 </div>
@@ -100,27 +128,32 @@
     </section>
 
     <!-- Features CTA Section -->
-    <section class="section-padding text-center border-top border-bottom" style="border-color: var(--border-color) !important; background-color: var(--bg-color);">
+    <section class="section-padding text-center border-top border-bottom"
+        style="border-color: var(--border-color) !important; background-color: var(--bg-color);">
         <div class="container">
             <h2 class="mb-5">Track Your Team's Legacy</h2>
             <div class="row g-4 justify-content-center mb-5">
                 <div class="col-md-4">
                     <div class="puzzle-card p-4 h-100 text-center">
-                        <img src="assets/img/waiver.png" alt="Digital Waivers" class="img-fluid mb-4" style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
+                        <img src="assets/img/waiver.png" alt="Digital Waivers" class="img-fluid mb-4"
+                            style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
                         <h4 class="h5">Digital Waivers</h4>
-                        <p class="text-muted small">Sign ahead of time securely in the player portal so your group can walk straight in.</p>
+                        <p class="text-muted small">Sign ahead of time securely in the player portal so your group can
+                            walk straight in.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="puzzle-card p-4 h-100 text-center">
-                        <img src="assets/img/tracking.png" alt="Win/Loss Tracking" class="img-fluid mb-4" style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
+                        <img src="assets/img/tracking.png" alt="Win/Loss Tracking" class="img-fluid mb-4"
+                            style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
                         <h4 class="h5">Win/Loss Tracking</h4>
                         <p class="text-muted small">Review your team's historical escape times and success rates.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="puzzle-card p-4 h-100 text-center">
-                        <img src="assets/img/trophy.png" alt="Global Leaderboard" class="img-fluid mb-4" style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
+                        <img src="assets/img/trophy.png" alt="Global Leaderboard" class="img-fluid mb-4"
+                            style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
                         <h4 class="h5">Global Leaderboard</h4>
                         <p class="text-muted small">Compete for the #1 spot on our city-wide hall of fame.</p>
                     </div>
@@ -130,7 +163,7 @@
         </div>
     </section>
 
-        <!-- 1. Featured Rooms Grid -->
+    <!-- 1. Featured Rooms Grid -->
     <section class="section-padding">
         <div class="container">
             <div class="text-center mb-5">
@@ -140,13 +173,17 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="puzzle-card">
-                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Cyber Grid" class="w-100 object-fit-cover" style="height: 250px; filter: grayscale(50%) contrast(120%);">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80"
+                            alt="Cyber Grid" class="w-100 object-fit-cover"
+                            style="height: 250px; filter: grayscale(50%) contrast(120%);">
                         <div class="p-4">
                             <h4 class="mb-3">The Cyber Heist</h4>
-                            <p class="text-muted small mb-4">Infiltrate the megacorp's server bank. Bypass laser grids and sync terminal inputs simultaneously.</p>
+                            <p class="text-muted small mb-4">Infiltrate the megacorp's server bank. Bypass laser grids
+                                and sync terminal inputs simultaneously.</p>
                             <div class="d-flex justify-content-between align-items-center mb-4">
                                 <span class="badge bg-secondary">Hard</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 3-6 Players</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 3-6
+                                    Players</span>
                             </div>
                             <a href="service-details.html" class="btn btn-outline-primary w-100">Access Node</a>
                         </div>
@@ -154,13 +191,17 @@
                 </div>
                 <div class="col-md-4">
                     <div class="puzzle-card">
-                        <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=80" alt="Reactor Core" class="w-100 object-fit-cover" style="height: 250px; filter: grayscale(50%) contrast(120%);">
+                        <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=80"
+                            alt="Reactor Core" class="w-100 object-fit-cover"
+                            style="height: 250px; filter: grayscale(50%) contrast(120%);">
                         <div class="p-4">
                             <h4 class="mb-3">Meltdown Protocol</h4>
-                            <p class="text-muted small mb-4">The core is melting down. Half your team is in control, half in processing. Communicate or burn.</p>
+                            <p class="text-muted small mb-4">The core is melting down. Half your team is in control,
+                                half in processing. Communicate or burn.</p>
                             <div class="d-flex justify-content-between align-items-center mb-4">
                                 <span class="badge bg-danger">Extreme</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 4-8 Players</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 4-8
+                                    Players</span>
                             </div>
                             <a href="service-details.html" class="btn btn-outline-danger w-100">Access Node</a>
                         </div>
@@ -168,13 +209,17 @@
                 </div>
                 <div class="col-md-4">
                     <div class="puzzle-card">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Abandoned Ward" class="w-100 object-fit-cover" style="height: 250px; filter: grayscale(50%) contrast(120%);">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                            alt="Abandoned Ward" class="w-100 object-fit-cover"
+                            style="height: 250px; filter: grayscale(50%) contrast(120%);">
                         <div class="p-4">
                             <h4 class="mb-3">Echoes in the Dark</h4>
-                            <p class="text-muted small mb-4">Explore the abandoned ward in absolute darkness. Sound sensors track your movement. Stay quiet.</p>
+                            <p class="text-muted small mb-4">Explore the abandoned ward in absolute darkness. Sound
+                                sensors track your movement. Stay quiet.</p>
                             <div class="d-flex justify-content-between align-items-center mb-4">
                                 <span class="badge" style="background-color: var(--secondary-color);">Medium</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill" style="color: var(--secondary-color);"></i> 2-5 Players</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill"
+                                        style="color: var(--secondary-color);"></i> 2-5 Players</span>
                             </div>
                             <a href="service-details.html" class="btn btn-outline-secondary w-100">Access Node</a>
                         </div>
@@ -191,24 +236,33 @@
             <h2 class="display-5 mb-5">How To Survive</h2>
             <div class="row g-4 position-relative">
                 <div class="col-md-4 position-relative z-1">
-                    <div class="p-4 rounded border h-100" style="background: var(--card-bg); border-color: var(--border-color) !important;">
-                        <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">1</div>
+                    <div class="p-4 rounded border h-100"
+                        style="background: var(--card-bg); border-color: var(--border-color) !important;">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4"
+                            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">1</div>
                         <h4 class="mb-3">Establish Link</h4>
-                        <p class="text-muted small mb-0">Select your simulation and confirm your extraction team online through the secure portal.</p>
+                        <p class="text-muted small mb-0">Select your simulation and confirm your extraction team online
+                            through the secure portal.</p>
                     </div>
                 </div>
                 <div class="col-md-4 position-relative z-1">
-                    <div class="p-4 rounded border h-100" style="background: var(--card-bg); border-color: var(--border-color) !important;">
-                        <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">2</div>
+                    <div class="p-4 rounded border h-100"
+                        style="background: var(--card-bg); border-color: var(--border-color) !important;">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4"
+                            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">2</div>
                         <h4 class="mb-3">Penetrate Facility</h4>
-                        <p class="text-muted small mb-0">Arrive at Sector B. Store your external devices and synchronize minds with your squad.</p>
+                        <p class="text-muted small mb-0">Arrive at Sector B. Store your external devices and synchronize
+                            minds with your squad.</p>
                     </div>
                 </div>
                 <div class="col-md-4 position-relative z-1">
-                    <div class="p-4 rounded border h-100" style="background: var(--card-bg); border-color: var(--border-color) !important;">
-                        <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">3</div>
+                    <div class="p-4 rounded border h-100"
+                        style="background: var(--card-bg); border-color: var(--border-color) !important;">
+                        <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4"
+                            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">3</div>
                         <h4 class="mb-3">Escape The Grid</h4>
-                        <p class="text-muted small mb-0">You have 60 minutes. Use physical interactions, logic, and teamwork to secure freedom.</p>
+                        <p class="text-muted small mb-0">You have 60 minutes. Use physical interactions, logic, and
+                            teamwork to secure freedom.</p>
                     </div>
                 </div>
             </div>
@@ -216,27 +270,39 @@
     </section>
 
     <!-- 3. Testimonials -->
-    <section class="section-padding border-top border-bottom" style="background-color: var(--bg-color); border-color: var(--border-color) !important;">
+    <section class="section-padding border-top border-bottom"
+        style="background-color: var(--bg-color); border-color: var(--border-color) !important;">
         <div class="container text-center">
             <h2 class="mb-5">Survivor Logs</h2>
-            <div id="testimonialCarousel" class="carousel slide max-w-md mx-auto" data-bs-ride="carousel" style="max-width: 800px;">
+            <div id="testimonialCarousel" class="carousel slide max-w-md mx-auto" data-bs-ride="carousel"
+                style="max-width: 800px;">
                 <div class="carousel-inner">
                     <div class="carousel-item active p-4">
                         <i class="bi bi-quote text-primary opacity-50" style="font-size: 4rem; line-height: 0;"></i>
-                        <h4 class="lh-base mb-4 mt-3 font-base" style="font-family: var(--font-base); font-weight: 500;">"Most escape rooms are just combination locks in an office. EscapeX's Meltdown Protocol felt like we were actually defusing a reactor. The teamwork mechanics are incredibly well designed."</h4>
+                        <h4 class="lh-base mb-4 mt-3 font-base"
+                            style="font-family: var(--font-base); font-weight: 500;">"Most escape rooms are just
+                            combination locks in an office. EscapeX's Meltdown Protocol felt like we were actually
+                            defusing a reactor. The teamwork mechanics are incredibly well designed."</h4>
                         <p class="text-primary tracking-widest small mb-0">OPERATIVE 994-A</p>
                     </div>
                     <div class="carousel-item p-4">
                         <i class="bi bi-quote text-primary opacity-50" style="font-size: 4rem; line-height: 0;"></i>
-                        <h4 class="lh-base mb-4 mt-3 font-base" style="font-family: var(--font-base); font-weight: 500;">"Terrifying, thrilling, and completely immersive. The blackout sections in the ward room required perfect communication. We barely escaped."</h4>
+                        <h4 class="lh-base mb-4 mt-3 font-base"
+                            style="font-family: var(--font-base); font-weight: 500;">"Terrifying, thrilling, and
+                            completely immersive. The blackout sections in the ward room required perfect communication.
+                            We barely escaped."</h4>
                         <p class="text-primary tracking-widest small mb-0">SQUAD DELTA TEAM</p>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="width: 5%;">
-                    <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1) hue-rotate(180deg);"></span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev" style="width: 5%;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"
+                        style="filter: invert(1) hue-rotate(180deg);"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="width: 5%;">
-                    <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1) hue-rotate(180deg);"></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next" style="width: 5%;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"
+                        style="filter: invert(1) hue-rotate(180deg);"></span>
                 </button>
             </div>
         </div>
@@ -254,37 +320,47 @@
                     <div class="accordion" id="intelAccordion">
                         <div class="accordion-item bg-transparent">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed font-heading tracking-widest text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                <button class="accordion-button collapsed font-heading tracking-widest text-uppercase"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
                                     Are we actually locked in?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#intelAccordion">
                                 <div class="accordion-body">
-                                    Negative. While the simulation guarantees total immersion, safety overrides are always active. Every grid has a marked emergency exit that opens immediately if pressed. Your safety is our primary directive.
+                                    Negative. While the simulation guarantees total immersion, safety overrides are
+                                    always active. Every grid has a marked emergency exit that opens immediately if
+                                    pressed. Your safety is our primary directive.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item bg-transparent">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed font-heading tracking-widest text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                <button class="accordion-button collapsed font-heading tracking-widest text-uppercase"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
                                     Is it scary?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#intelAccordion">
                                 <div class="accordion-body">
-                                    Our rooms range in intensity. "Echoes in the Dark" features sensory deprivation and tension-building audio sequences, while "The Cyber Heist" is brightly lit and action-focused. Review the simulation details to choose your threat level.
+                                    Our rooms range in intensity. "Echoes in the Dark" features sensory deprivation and
+                                    tension-building audio sequences, while "The Cyber Heist" is brightly lit and
+                                    action-focused. Review the simulation details to choose your threat level.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item bg-transparent">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed font-heading tracking-widest text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                <button class="accordion-button collapsed font-heading tracking-widest text-uppercase"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
                                     Are cell phones allowed?
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#intelAccordion">
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#intelAccordion">
                                 <div class="accordion-body">
-                                    External communication devices must be stored in the biometric lockers in Sector B before entry. Unsanctioned electronic frequencies interfere with the grid's sensory network.
+                                    External communication devices must be stored in the biometric lockers in Sector B
+                                    before entry. Unsanctioned electronic frequencies interfere with the grid's sensory
+                                    network.
                                 </div>
                             </div>
                         </div>
@@ -305,12 +381,25 @@
                     <a class="navbar-brand text-white d-flex align-items-center gap-2 mb-3 h4" href="index.html">
                         <i class="bi bi-box-fill text-primary"></i> EscapeX
                     </a>
-                    <p class="text-muted small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring your team, test your minds, escape the grid.</p>
+                    <p class="text-muted small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring your
+                        team, test your minds, escape the grid.</p>
                     <div class="d-flex gap-2">
-                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-youtube"></i></a>
+                        <a href="#"
+                            class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#"
+                            class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#"
+                            class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
+                                class="bi bi-youtube"></i></a>
                     </div>
                 </div>
 
@@ -319,11 +408,14 @@
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Quick Links</h6>
                     <ul class="list-unstyled text-white-50 small">
                         <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a>
+                        </li>
                         <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
                         <li class="mb-2"><a href="blog.html" class="text-white-50 text-decoration-none">Blog</a></li>
-                        <li class="mb-2"><a href="pricing.html" class="text-white-50 text-decoration-none">Pricing</a></li>
-                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white-50 text-decoration-none">Pricing</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -355,13 +447,15 @@
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Newsletter</h6>
                     <p class="text-muted small mb-3">Get hints and early access to new room themes.</p>
                     <form class="d-flex gap-2 mb-0">
-                        <input type="email" class="form-control form-control-sm text-white footer-newsletter-input" placeholder="Email" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.2);" required>
+                        <input type="email" class="form-control form-control-sm footer-newsletter-input"
+                            placeholder="Email" required>
                         <button class="btn btn-primary btn-sm px-3" type="submit">Join</button>
                     </form>
                 </div>
 
             </div>
-            <div class="border-top pt-4 text-center text-white-50 small" style="border-color: rgba(255,255,255,0.1) !important;">
+            <div class="border-top pt-4 text-center text-white-50 small"
+                style="border-color: rgba(255,255,255,0.1) !important;">
                 <span class="text-white-50">&copy; 2026 EscapeX Facility. All rights reserved.</span>
             </div>
         </div>
@@ -370,4 +464,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

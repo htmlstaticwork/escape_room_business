@@ -8,6 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
             sidebar.classList.toggle('d-none');
             sidebar.classList.toggle('d-block');
         });
+
+        // Close sidebar when clicking a link (mobile only)
+        const sidebarLinks = sidebar.querySelectorAll('.nav-link');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 992) {
+                    sidebar.classList.add('d-none');
+                    sidebar.classList.remove('d-block');
+                }
+            });
+        });
     }
 
     // Mock functionality: Sign Waiver

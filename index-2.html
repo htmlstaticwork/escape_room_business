@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EscapeX - Corporate & Group Events</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <style>
-        .split-hero { min-height: 100vh; display: flex; }
-        .split-half { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 4rem; padding-top: 7rem; position: relative; }
-        .split-left { background-color: var(--bg-color); border-right: 1px solid var(--border-color); z-index: 2; }
-        .split-right { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?auto=format&fit=crop&w=1000&q=80') center/cover; }
-        @media (max-width: 991px) { 
-            .split-hero { flex-direction: column; } 
-            .split-half { min-height: 50vh; padding: 7rem 1.5rem 3rem 1.5rem; text-align: center; align-items: center; }
-            .split-left .btn { min-width: 240px; }
+        .split-hero {
+            min-height: 100vh;
+            display: flex;
+        }
+
+        .split-half {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem;
+            padding-top: 7rem;
+            position: relative;
+        }
+
+        .split-left {
+            background-color: var(--bg-color);
+            border-right: 1px solid var(--border-color);
+            z-index: 2;
+        }
+
+        .split-right {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?auto=format&fit=crop&w=1000&q=80') center/cover;
+        }
+
+        @media (max-width: 991px) {
+            .split-hero {
+                flex-direction: column;
+            }
+
+            .split-half {
+                min-height: 50vh;
+                padding: 7rem 1.5rem 3rem 1.5rem;
+                text-align: center;
+                align-items: center;
+            }
+
+            .split-left .btn {
+                min-width: 240px;
+            }
         }
     </style>
 </head>
+
 <body data-theme="light">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
@@ -32,12 +68,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
-                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <a class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown">Home</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html">Home 1</a></li>
-                            <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
+                            <li><a class="dropdown-item active" href="index-2.html">Home 2</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
@@ -48,8 +85,10 @@
                 </ul>
                 <div class="d-flex align-items-center gap-3 navbar-actions">
                     <div class="d-flex align-items-center" style="gap:2px;">
-                        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-translate"></i></button>
-                        <button class="theme-toggle btn btn-sm btn-link text-theme p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+                        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1"
+                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-translate"></i></button>
+                        <button class="theme-toggle btn btn-sm btn-link text-theme p-1"
+                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
                     </div>
                     <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
                     <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
@@ -63,14 +102,18 @@
         <div class="split-half split-left align-items-lg-start">
             <p class="text-primary tracking-widest mb-2 font-heading small">CORPORATE & TEAMBUILDING</p>
             <h1 class="display-3 font-heading mb-4">FRACTURE THE MIND. BUILD THE TEAM.</h1>
-            <p class="lead text-muted mb-5 mx-auto mx-lg-0" style="max-width: 500px;">Put your colleagues into extreme puzzle isolation where standard corporate communication fails. Only true collaboration unlocks the door.</p>
+            <p class="lead text-muted mb-5 mx-auto mx-lg-0" style="max-width: 500px;">Put your colleagues into extreme
+                puzzle isolation where standard corporate communication fails. Only true collaboration unlocks the door.
+            </p>
             <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                 <a href="contact.html" class="btn btn-primary btn-lg px-4">INQUIRE FOR EVENTS</a>
                 <a href="pricing.html" class="btn btn-secondary btn-lg px-4">VIEW PACKAGES</a>
             </div>
         </div>
         <div class="split-half split-right text-center text-white">
-            <i class="bi bi-play-circle display-1 text-primary opacity-75 mb-3 cursor-pointer" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></i>
+            <i class="bi bi-play-circle display-1 text-primary opacity-75 mb-3 cursor-pointer"
+                style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'"
+                onmouseout="this.style.transform='scale(1)'"></i>
             <h4 class="font-heading tracking-widest text-uppercase">Watch The Experience</h4>
         </div>
     </div>
@@ -84,24 +127,31 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="p-4 rounded border h-100 text-center" style="background: var(--card-bg); border-color: var(--border-color) !important;">
+                    <div class="p-4 rounded border h-100 text-center"
+                        style="background: var(--card-bg); border-color: var(--border-color) !important;">
                         <i class="bi bi-chat-dots fs-1 text-primary mb-3"></i>
-                        <h4 class="mb-3 benefit-card-title text-uppercase font-heading">Communication Under Pressure</h4>
-                        <p class="text-muted small mb-0">Our simulated crises force teams to communicate efficiently and clearly when the stakes are high and the clock is ticking.</p>
+                        <h4 class="mb-3 benefit-card-title text-uppercase font-heading">Communication Under Pressure
+                        </h4>
+                        <p class="text-muted small mb-0">Our simulated crises force teams to communicate efficiently and
+                            clearly when the stakes are high and the clock is ticking.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 rounded border h-100 text-center" style="background: var(--card-bg); border-color: var(--border-color) !important;">
+                    <div class="p-4 rounded border h-100 text-center"
+                        style="background: var(--card-bg); border-color: var(--border-color) !important;">
                         <i class="bi bi-diagram-3 fs-1 text-primary mb-3"></i>
                         <h4 class="mb-3 benefit-card-title text-uppercase font-heading">Identify Leadership</h4>
-                        <p class="text-muted small mb-0">Watch natural leaders emerge and discover hidden talents within your group as they navigate complex tactical challenges.</p>
+                        <p class="text-muted small mb-0">Watch natural leaders emerge and discover hidden talents within
+                            your group as they navigate complex tactical challenges.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 rounded border h-100 text-center" style="background: var(--card-bg); border-color: var(--border-color) !important;">
+                    <div class="p-4 rounded border h-100 text-center"
+                        style="background: var(--card-bg); border-color: var(--border-color) !important;">
                         <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
                         <h4 class="mb-3 benefit-card-title text-uppercase font-heading">Morale & Trust</h4>
-                        <p class="text-muted small mb-0">Nothing bonds a team like mutual survival. Shared victories in our grids translate to improved collaboration back in the office.</p>
+                        <p class="text-muted small mb-0">Nothing bonds a team like mutual survival. Shared victories in
+                            our grids translate to improved collaboration back in the office.</p>
                     </div>
                 </div>
             </div>
@@ -117,30 +167,43 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="puzzle-card h-100 border rounded overflow-hidden d-flex flex-column" style="border-color: var(--border-color) !important;">
-                        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80" alt="Meltdown Protocol" class="w-100 object-fit-cover" style="height: 300px; filter: grayscale(50%) contrast(120%);">
+                    <div class="puzzle-card h-100 border rounded overflow-hidden d-flex flex-column"
+                        style="border-color: var(--border-color) !important;">
+                        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80"
+                            alt="Meltdown Protocol" class="w-100 object-fit-cover"
+                            style="height: 300px; filter: grayscale(50%) contrast(120%);">
                         <div class="p-4 d-flex flex-column flex-grow-1" style="background-color: var(--card-bg);">
                             <h4 class="mb-3">Meltdown Protocol</h4>
-                            <p class="text-muted small mb-4">Requires a precise split of resources. Half your team controls the cooling rods, the other half manages power output. Perfect for cross-department synchronization.</p>
+                            <p class="text-muted small mb-4">Requires a precise split of resources. Half your team
+                                controls the cooling rods, the other half manages power output. Perfect for
+                                cross-department synchronization.</p>
                             <div class="d-flex justify-content-between align-items-center mb-4 mt-auto">
                                 <span class="badge bg-danger">Extreme</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 8-16 Players</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 8-16
+                                    Players</span>
                             </div>
                             <a href="service-details.html" class="btn btn-outline-danger w-100 mt-2">View Simulation</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="puzzle-card h-100 border rounded overflow-hidden d-flex flex-column" style="border-color: var(--border-color) !important;">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="The Cyber Heist" class="w-100 object-fit-cover" style="height: 300px; filter: grayscale(50%) contrast(120%);">
+                    <div class="puzzle-card h-100 border rounded overflow-hidden d-flex flex-column"
+                        style="border-color: var(--border-color) !important;">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+                            alt="The Cyber Heist" class="w-100 object-fit-cover"
+                            style="height: 300px; filter: grayscale(50%) contrast(120%);">
                         <div class="p-4 d-flex flex-column flex-grow-1" style="background-color: var(--card-bg);">
                             <h4 class="mb-3">The Cyber Heist</h4>
-                            <p class="text-muted small mb-4">A fast-paced infiltration mission requiring rapid decision making and risk assessment. Highly engaging for competitive, goal-oriented teams striving for the high score.</p>
+                            <p class="text-muted small mb-4">A fast-paced infiltration mission requiring rapid decision
+                                making and risk assessment. Highly engaging for competitive, goal-oriented teams
+                                striving for the high score.</p>
                             <div class="d-flex justify-content-between align-items-center mb-4 mt-auto">
                                 <span class="badge bg-secondary">Hard</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 6-12 Players</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 6-12
+                                    Players</span>
                             </div>
-                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-2">View Simulation</a>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-2">View
+                                Simulation</a>
                         </div>
                     </div>
                 </div>
@@ -156,19 +219,19 @@
             <div class="row align-items-center g-4">
                 <div class="col-md-3">
                     <h1 class="display-1 text-primary opacity-25 fw-bold mb-0">01</h1>
-                    <h5 class="mt-2 text-white">Consultation</h5>
+                    <h3 class="mt-2">Consultation</h3>
                     <p class="small text-muted">We match your group size and goals to the perfect grids.</p>
                 </div>
                 <div class="col-md-1 d-none d-md-block text-primary"><i class="bi bi-arrow-right fs-3"></i></div>
                 <div class="col-md-3">
                     <h1 class="display-1 text-primary opacity-25 fw-bold mb-0">02</h1>
-                    <h5 class="mt-2 text-white">Digital Onboarding</h5>
+                    <h3 class="mt-2">Digital Onboarding</h3>
                     <p class="small text-muted">Teams receive portal access to sign waivers pre-arrival.</p>
                 </div>
                 <div class="col-md-1 d-none d-md-block text-primary"><i class="bi bi-arrow-right fs-3"></i></div>
                 <div class="col-md-3">
                     <h1 class="display-1 text-primary opacity-25 fw-bold mb-0">03</h1>
-                    <h5 class="mt-2 text-white">The Operation</h5>
+                    <h3 class="mt-2">The Operation</h3>
                     <p class="small text-muted">Your teams deploy. We monitor and track their metrics live.</p>
                 </div>
             </div>
@@ -176,7 +239,8 @@
     </section>
 
     <!-- 5. Stats / Metrics -->
-    <section class="section-padding text-center border-top border-bottom" style="border-color: var(--border-color) !important; background-color: var(--bg-color);">
+    <section class="section-padding text-center border-top border-bottom"
+        style="border-color: var(--border-color) !important; background-color: var(--bg-color);">
         <div class="container py-4">
             <div class="row g-4">
                 <div class="col-md-3 col-6">
@@ -205,17 +269,27 @@
             <h2 class="mb-5">Trusted by Industry Leaders</h2>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-5">
-                    <div class="p-4 rounded border text-start h-100" style="background: var(--card-bg); border-color: var(--border-color) !important;">
-                        <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
-                        <p class="mt-3 mb-4">"An incredible experience for our quarterly retreat. The puzzles forced our remote team to collaborate in ways they never had before. The post-game metrics dashboard was a huge hit."</p>
+                    <div class="p-4 rounded border text-start h-100"
+                        style="background: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
+                            class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
+                            class="bi bi-star-fill text-warning"></i>
+                        <p class="mt-3 mb-4">"An incredible experience for our quarterly retreat. The puzzles forced our
+                            remote team to collaborate in ways they never had before. The post-game metrics dashboard
+                            was a huge hit."</p>
                         <h6 class="mb-0">Sarah Jenkins</h6>
                         <small class="text-muted text-uppercase tracking-widest">VP of Operations, TechFlow</small>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="p-4 rounded border text-start h-100" style="background: var(--card-bg); border-color: var(--border-color) !important;">
-                        <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-line text-warning"></i>
-                        <p class="mt-3 mb-4">"We booked the Meltdown Protocol for 15 managers. It was chaotic in the best way possible. The facility is state-of-the-art and the staff handled everything seamlessly."</p>
+                    <div class="p-4 rounded border text-start h-100"
+                        style="background: var(--card-bg); border-color: var(--border-color) !important;">
+                        <i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
+                            class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i
+                            class="bi bi-star-line text-warning"></i>
+                        <p class="mt-3 mb-4">"We booked the Meltdown Protocol for 15 managers. It was chaotic in the
+                            best way possible. The facility is state-of-the-art and the staff handled everything
+                            seamlessly."</p>
                         <h6 class="mb-0">Marcus Thorne</h6>
                         <small class="text-muted text-uppercase tracking-widest">HR Director, Apex Financial</small>
                     </div>
@@ -225,13 +299,17 @@
     </section>
 
     <!-- 7. CTA / Request Proposal -->
-    <section class="section-padding text-center position-relative" style="background: var(--hero-overlay), url('https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?auto=format&fit=crop&w=1920&q=80') center/cover;">
+    <section class="section-padding text-center position-relative"
+        style="background: var(--hero-overlay), url('https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container position-relative z-2">
             <h2 class="display-4 mb-4">Ready to Challenge Your Team?</h2>
-            <p class="lead text-muted mb-5 max-w-md mx-auto" style="max-width: 600px;">Get a custom proposal within 24 hours. Let us handle the logistics while you prepare for the grid.</p>
+            <p class="lead text-muted mb-5 max-w-md mx-auto" style="max-width: 600px;">Get a custom proposal within 24
+                hours. Let us handle the logistics while you prepare for the grid.</p>
             <a href="contact.html" class="btn btn-primary btn-lg px-5 py-3 fs-5">Request Event Proposal</a>
         </div>
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: linear-gradient(var(--primary-color) 1px, transparent 1px), linear-gradient(90deg, var(--primary-color) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.05; z-index: 1;"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-image: linear-gradient(var(--primary-color) 1px, transparent 1px), linear-gradient(90deg, var(--primary-color) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.05; z-index: 1;">
+        </div>
     </section>
 
     <!-- Footer -->
@@ -244,12 +322,25 @@
                     <a class="navbar-brand text-white d-flex align-items-center gap-2 mb-3 h4" href="index.html">
                         <i class="bi bi-box-fill text-primary"></i> EscapeX
                     </a>
-                    <p class="text-muted small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring your team, test your minds, escape the grid.</p>
+                    <p class="text-muted small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring your
+                        team, test your minds, escape the grid.</p>
                     <div class="d-flex gap-2">
-                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center" style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i class="bi bi-youtube"></i></a>
+                        <a href="#"
+                            class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#"
+                            class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#"
+                            class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
+                                class="bi bi-youtube"></i></a>
                     </div>
                 </div>
 
@@ -258,11 +349,14 @@
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Quick Links</h6>
                     <ul class="list-unstyled text-white-50 small">
                         <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a>
+                        </li>
                         <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
                         <li class="mb-2"><a href="blog.html" class="text-white-50 text-decoration-none">Blog</a></li>
-                        <li class="mb-2"><a href="pricing.html" class="text-white-50 text-decoration-none">Pricing</a></li>
-                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-white-50 text-decoration-none">Pricing</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -294,13 +388,15 @@
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Newsletter</h6>
                     <p class="text-muted small mb-3">Get hints and early access to new room themes.</p>
                     <form class="d-flex gap-2 mb-0">
-                        <input type="email" class="form-control form-control-sm text-white footer-newsletter-input" placeholder="Email" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.2);" required>
+                        <input type="email" class="form-control form-control-sm footer-newsletter-input"
+                            placeholder="Email" required>
                         <button class="btn btn-primary btn-sm px-3" type="submit">Join</button>
                     </form>
                 </div>
 
             </div>
-            <div class="border-top pt-4 text-center text-white-50 small" style="border-color: rgba(255,255,255,0.1) !important;">
+            <div class="border-top pt-4 text-center text-white-50 small"
+                style="border-color: rgba(255,255,255,0.1) !important;">
                 <span class="text-white-50">&copy; 2026 EscapeX Facility. All rights reserved.</span>
             </div>
         </div>
@@ -309,6 +405,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-
-
