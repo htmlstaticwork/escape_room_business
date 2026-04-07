@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Profile - EscapeX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <style>
-        .auth-wrapper { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; padding: 2rem 0;}
-        .auth-card { width: 100%; max-width: 440px; padding: 3rem; background: var(--card-bg) !important; border: 1px solid var(--border-color) !important; backdrop-filter: blur(10px); transition: all 0.3s ease; }
+        .auth-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            padding: 2rem 0;
+        }
+
+        .auth-card {
+            width: 100%;
+            max-width: 440px;
+            padding: 3rem;
+            background: var(--card-bg) !important;
+            border: 1px solid var(--border-color) !important;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
+
 <body data-theme="light">
-    
+
 
 
     <!-- Corner Controls -->
@@ -26,10 +47,10 @@
 
     <div class="auth-wrapper px-3">
         <div class="puzzle-card auth-card border-secondary">
-            
+
             <div class="text-center mb-5">
                 <a class="navbar-brand d-flex align-items-center justify-content-center gap-2 mb-2" href="index.html">
-                    <i class="bi bi-box-fill text-secondary"></i> <span class="font-heading fs-3" style="color: var(--text-color)">EscapeX</span>
+                    <i class="bi bi-box-fill"></i> <span class="font-heading fs-3">EscapeX</span>
                 </a>
                 <p class="text-muted small tracking-widest text-uppercase">Register Operative ID</p>
             </div>
@@ -51,34 +72,33 @@
             </div>
 
             <form action="dashboard.html" class="needs-validation" novalidate>
-                <div class="row g-2 mb-3">
-                    <div class="col-6">
-                        <label class="form-label small text-muted tracking-widest text-uppercase">First Node</label>
-                        <input type="text" class="form-control py-2" placeholder="First Name" required>
-                    </div>
-                    <div class="col-6">
-                        <label class="form-label small text-muted tracking-widest text-uppercase">Last Node</label>
-                        <input type="text" class="form-control py-2" placeholder="Last Name" required>
-                    </div>
+                <div class="mb-3">
+                    <label class="form-label small text-muted tracking-widest text-uppercase">First Node</label>
+                    <input type="text" class="form-control py-2" placeholder="First Name" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label small text-muted tracking-widest text-uppercase">Last Node</label>
+                    <input type="text" class="form-control py-2" placeholder="Last Name" required>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label small text-muted tracking-widest text-uppercase">Frequency (Email)</label>
                     <input type="email" class="form-control py-2" required>
                 </div>
-                
+
                 <div class="mb-4">
                     <label class="form-label small text-muted tracking-widest text-uppercase">Secure Code</label>
                     <div class="input-group">
                         <input type="password" class="form-control py-2" id="pwdInputR" required minlength="8">
-                        <button class="btn btn-outline-secondary" type="button" id="togglePwdR"><i class="bi bi-eye"></i></button>
+                        <button class="btn btn-outline-secondary" type="button" id="togglePwdR"><i
+                                class="bi bi-eye"></i></button>
                     </div>
                 </div>
 
                 <div class="form-check mb-5">
                     <input class="form-check-input bg-transparent border-secondary" type="checkbox" id="terms" required>
                     <label class="form-check-label text-muted small" for="terms">
-                        Acknowledge <a href="#" class="text-secondary">Waiver</a>.
+                        Acknowledge <a href="#" class="text-primary">Waiver</a>.
                     </label>
                 </div>
 
@@ -86,7 +106,8 @@
             </form>
 
             <div class="text-center mt-5 pt-4 border-top" style="border-color: var(--border-color) !important;">
-                <p class="text-muted small mb-0">Record encoded? <a href="login.html" class="text-secondary fw-bold text-decoration-none">Establish Link</a></p>
+                <p class="text-muted small mb-0">Record encoded? <a href="login.html"
+                        class="text-primary fw-bold text-decoration-none">Establish Link</a></p>
             </div>
         </div>
     </div>
@@ -94,7 +115,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        document.getElementById('togglePwdR')?.addEventListener('click', function() {
+        document.getElementById('togglePwdR')?.addEventListener('click', function () {
             const pwdInput = document.getElementById('pwdInputR');
             const icon = this.querySelector('i');
             if (pwdInput.type === 'password') {
@@ -107,5 +128,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>

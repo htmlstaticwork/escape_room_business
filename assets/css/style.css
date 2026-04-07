@@ -36,7 +36,9 @@
   --font-base: 'Inter', sans-serif;
   --font-heading: 'Outfit', sans-serif;
   --muted-color: #64748b;
+  --brand-primary: #00ffcc;
 }
+
 
 [data-theme="dark"] {
   --bg-color: #050505;
@@ -206,14 +208,24 @@ a:hover {
   filter: invert(1) brightness(1.5);
 }
 
-.navbar-brand {
+.navbar-brand,
+.navbar-brand:hover {
   font-family: var(--font-heading);
   font-weight: 800;
-  color: var(--primary-color) !important;
+  color: var(--brand-primary) !important;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
+
+.navbar-brand i,
+.navbar-brand:hover i {
+  color: var(--brand-primary) !important;
+}
+
+
 
 .nav-link {
   color: var(--text-color) !important;
@@ -415,13 +427,11 @@ footer {
   color: #ffffff !important;
 }
 
-footer .navbar-brand {
-  color: var(--text-color) !important;
+footer .navbar-brand,
+footer .navbar-brand i {
+  color: var(--brand-primary) !important;
 }
 
-footer .navbar-brand i {
-  color: var(--primary-color) !important;
-}
 
 footer p.text-muted,
 footer .text-white-50 {
@@ -599,5 +609,102 @@ footer .d-flex.gap-2 a.btn.rounded-circle:hover {
     display: inline-flex !important;
     justify-content: center !important;
     align-items: center !important;
+  }
+}
+
+/* Dashboard Enhancements */
+.dashboard-section {
+  animation: fadeInDashboard 0.4s ease-out;
+}
+
+@keyframes fadeInDashboard {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.puzzle-card.active-section {
+  border-left: 4px solid var(--primary-color) !important;
+}
+
+.nav-link.active {
+  background: rgba(0, 255, 204, 0.05);
+  font-weight: 700 !important;
+}
+
+.table th {
+  font-weight: 600;
+  color: var(--muted-color);
+}
+
+.placeholder-img {
+  filter: grayscale(1) contrast(1.2);
+  transition: all 0.3s ease;
+}
+
+.placeholder-img:hover {
+  filter: grayscale(0) contrast(1);
+}
+
+/* Dashboard Card Text Visibility Fix */
+.dashboard-section .puzzle-card h1,
+.dashboard-section .puzzle-card h2,
+.dashboard-section .puzzle-card h3,
+.dashboard-section .puzzle-card h4,
+.dashboard-section .puzzle-card h5,
+.dashboard-section .puzzle-card h6 {
+  color: var(--text-color) !important;
+}
+
+.dashboard-section .puzzle-card p.text-muted,
+.dashboard-section .puzzle-card small.text-muted {
+  color: var(--muted-color) !important;
+}
+
+.dashboard-section .list-group-item {
+  color: inherit;
+}
+
+.dashboard-section .table {
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+}
+
+.dashboard-section .table thead th {
+  background-color: transparent !important;
+  color: var(--muted-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.dashboard-section .table tbody td {
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+}
+
+.puzzle-card.auth-card a:not(.navbar-brand) {
+  transition: all 0.3s ease;
+  color: var(--primary-color);
+}
+
+.puzzle-card.auth-card a:not(.navbar-brand):hover {
+  color: var(--secondary-color) !important;
+  text-shadow: 0 0 8px rgba(138, 43, 226, 0.4);
+  text-decoration: underline !important;
+}
+
+
+@media (max-width: 768px) {
+
+  .dashboard-section .row.g-4 {
+    --bs-gutter-y: 1.5rem;
+  }
+  
+  .dashboard-section h4 {
+    font-size: 1.1rem;
   }
 }
