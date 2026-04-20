@@ -52,7 +52,7 @@
                 <div class="d-flex align-items-center gap-3 navbar-actions">
                     <div class="d-flex align-items-center" style="gap:2px;">
                         <button class="rtl-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-translate"></i></button>
+                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-text-indent-right"></i></button>
                         <button class="theme-toggle btn btn-sm btn-link text-theme p-1"
                             style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
                     </div>
@@ -65,7 +65,7 @@
 
     <!-- Hero Section -->
     <section class="section-padding min-vh-100 d-flex align-items-center position-relative"
-        style="background: var(--hero-overlay), url('https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        style="background: var(--hero-overlay), url('assets/img/hero.png') center/cover;">
         <div class="container text-center position-relative" style="z-index: 2; color: var(--text-color);">
             <p class="text-primary tracking-widest mb-3">YOUR MIND IS THE ONLY KEY</p>
             <h1 class="display-3 mb-4" style="text-shadow: 0 0 20px rgba(0, 255, 204, 0.4);">Decode. Escape. Survive.
@@ -78,9 +78,9 @@
                 <a href="about.html" class="btn btn-secondary btn-lg px-4 hero-cta-btn">How It Works</a>
             </div>
         </div>
-        <!-- Mysterious grid overlay -->
+        <!-- Overlay -->
         <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background-image: linear-gradient(var(--primary-color) 1px, transparent 1px), linear-gradient(90deg, var(--primary-color) 1px, transparent 1px); background-size: 50px 50px; opacity: 0.05; z-index: 1;">
+            style="background: rgba(0,0,0,0.4); z-index: 1;">
         </div>
     </section>
 
@@ -91,35 +91,36 @@
                 <div class="col-lg-6 text-center text-lg-start">
                     <h2 class="mb-4">Not Just Padlocks. <br><span class="text-primary">True Interactions.</span></h2>
                     <p class="text-muted mb-4">We've eliminated standard combination locks. Our rooms react to weight,
-                        temperature, electrical currents, and synchronized group actions. You need every member of your
-                        team to solve the grid.</p>
+                        synchronized group actions, and tactile manipulation. You need every member of your
+                        team to escape the room.</p>
                     <ul class="list-unstyled mb-5 d-inline-block text-start d-lg-block">
-                        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-cpu fs-3 text-primary"></i>
-                            <span>Automated physical puzzles</span>
+                        <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-puzzle fs-3 text-primary"></i>
+                            <span>Immersive physical puzzles</span>
                         </li>
                         <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-people fs-3 text-primary"></i>
                             <span>Requires simultaneous group cooperation</span>
                         </li>
                         <li class="mb-3 d-flex align-items-center gap-3"><i
-                                class="bi bi-graph-up fs-3 text-primary"></i> <span>Live leaderboard tracking via
-                                Dashboard</span></li>
+                                class="bi bi-geo-fill fs-3 text-primary"></i> <span>Highly detailed atmospheric sets</span></li>
                     </ul>
                     <div class="mt-2">
-                        <a href="services.html" class="btn btn-outline-primary" style="color: #6b7280;">Explore The
-                            Tech</a>
+                        <a href="services.html" class="btn btn-outline-primary" style="color: #6b7280;">Explore Our Rooms</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-3">
                         <div class="col-6">
-                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
-                                alt="Room Teaser 1" class="img-fluid rounded border border-secondary w-100 mb-3"
-                                style="filter: grayscale(80%) sepia(20%) hue-rotate(130deg);">
+                            <div class="overflow-hidden rounded border border-secondary shadow-lg mb-3">
+                                <img src="assets/img/room_tomb.png" alt="Ancient Tomb Escape Room" class="img-fluid interactive-img w-100 object-fit-cover" style="height: 240px; filter: grayscale(10%) contrast(110%);">
+                            </div>
+                            <div class="overflow-hidden rounded border border-primary shadow-lg">
+                                <img src="assets/img/hero.png" alt="Group Escape Room" class="img-fluid interactive-img w-100 object-fit-cover" style="height: 260px; filter: grayscale(10%) contrast(110%);">
+                            </div>
                         </div>
                         <div class="col-6 mt-5">
-                            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=80"
-                                alt="Room Teaser 2" class="img-fluid rounded border border-danger w-100"
-                                style="filter: grayscale(80%) sepia(20%) hue-rotate(300deg);">
+                            <div class="overflow-hidden rounded border border-danger shadow-lg">
+                                <img src="assets/img/room_detective.png" alt="Detective Mystery Room" class="img-fluid interactive-img w-100 object-fit-cover" style="height: 420px; filter: grayscale(10%) contrast(110%);">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,39 +128,36 @@
         </div>
     </section>
 
-    <!-- Features CTA Section -->
+    <!-- Group Bookings Section -->
     <section class="section-padding text-center border-top border-bottom"
         style="border-color: var(--border-color) !important; background-color: var(--bg-color);">
         <div class="container">
-            <h2 class="mb-5">Track Your Team's Legacy</h2>
+            <p class="text-primary tracking-widest mb-2 text-uppercase">Gather Your Team</p>
+            <h2 class="mb-5 display-5">Perfect For Group Bookings</h2>
             <div class="row g-4 justify-content-center mb-5">
                 <div class="col-md-4">
                     <div class="puzzle-card p-4 h-100 text-center">
-                        <img src="assets/img/waiver.png" alt="Digital Waivers" class="img-fluid mb-4"
-                            style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
-                        <h4 class="h5">Digital Waivers</h4>
-                        <p class="text-muted small">Sign ahead of time securely in the player portal so your group can
-                            walk straight in.</p>
+                        <i class="bi bi-balloon fs-1 text-primary mb-3 d-block"></i>
+                        <h4 class="h5 font-heading">Birthday Parties</h4>
+                        <p class="text-muted small">Celebrate your special day with an unforgettable escape experience. Special party room access available for large groups.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="puzzle-card p-4 h-100 text-center">
-                        <img src="assets/img/tracking.png" alt="Win/Loss Tracking" class="img-fluid mb-4"
-                            style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
-                        <h4 class="h5">Win/Loss Tracking</h4>
-                        <p class="text-muted small">Review your team's historical escape times and success rates.</p>
+                        <i class="bi bi-briefcase fs-1 text-primary mb-3 d-block"></i>
+                        <h4 class="h5 font-heading">Corporate Events</h4>
+                        <p class="text-muted small">Boost morale and improve communication with our challenging cooperative puzzles. Custom catering and event spaces available.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="puzzle-card p-4 h-100 text-center">
-                        <img src="assets/img/trophy.png" alt="Global Leaderboard" class="img-fluid mb-4"
-                            style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0, 255, 204, 0.3));">
-                        <h4 class="h5">Global Leaderboard</h4>
-                        <p class="text-muted small">Compete for the #1 spot on our city-wide hall of fame.</p>
+                        <i class="bi bi-emoji-sunglasses fs-1 text-primary mb-3 d-block"></i>
+                        <h4 class="h5 font-heading">Friends & Family</h4>
+                        <p class="text-muted small">Looking for a unique weekend activity? Disconnect from screens and reconnect with each other by solving thrilling mysteries.</p>
                     </div>
                 </div>
             </div>
-            <a href="register.html" class="btn btn-primary px-5">Join The Grid Now</a>
+            <a href="contact.html" class="btn btn-primary btn-lg px-5">View Group Rates & Book</a>
         </div>
     </section>
 
@@ -167,61 +165,65 @@
     <section class="section-padding">
         <div class="container">
             <div class="text-center mb-5">
-                <p class="text-primary tracking-widest mb-2">ACTIVE SIMULATIONS</p>
-                <h2 class="display-5">Featured Grids</h2>
+                <p class="text-primary tracking-widest mb-2">EXCITING THEMES</p>
+                <h2 class="display-5">Featured Rooms</h2>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="puzzle-card">
-                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80"
-                            alt="Cyber Grid" class="w-100 object-fit-cover"
-                            style="height: 250px; filter: grayscale(50%) contrast(120%);">
-                        <div class="p-4">
-                            <h4 class="mb-3">The Cyber Heist</h4>
-                            <p class="text-muted small mb-4">Infiltrate the megacorp's server bank. Bypass laser grids
-                                and sync terminal inputs simultaneously.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <span class="badge bg-secondary">Hard</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 3-6
-                                    Players</span>
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <img src="assets/img/room_detective.png"
+                            alt="The Detective's Secret" class="w-100 object-fit-cover"
+                            style="height: 250px; filter: grayscale(20%) contrast(110%);">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="mb-3">The Detective's Secret</h4>
+                            <p class="text-muted small mb-4">Step into a 1920s detective agency. Uncover the clues, connect strings on the evidence board, and solve the mystery.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="badge bg-secondary">Medium</span>
+                                    <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 4-8
+                                        Players</span>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-primary w-100">View Details</a>
                             </div>
-                            <a href="service-details.html" class="btn btn-outline-primary w-100">Access Node</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="puzzle-card">
-                        <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=80"
-                            alt="Reactor Core" class="w-100 object-fit-cover"
-                            style="height: 250px; filter: grayscale(50%) contrast(120%);">
-                        <div class="p-4">
-                            <h4 class="mb-3">Meltdown Protocol</h4>
-                            <p class="text-muted small mb-4">The core is melting down. Half your team is in control,
-                                half in processing. Communicate or burn.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <span class="badge bg-danger">Extreme</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 4-8
-                                    Players</span>
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <img src="assets/img/room_tomb.png"
+                            alt="The Forgotten Tomb" class="w-100 object-fit-cover"
+                            style="height: 250px; filter: grayscale(20%) contrast(110%);">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h4 class="mb-3">The Forgotten Tomb</h4>
+                            <p class="text-muted small mb-4">Navigate ancient Egyptian ruins and decipher physical stone puzzles to unlock the secrets of the pharaoh.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="badge bg-danger">Extreme</span>
+                                    <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 6-10
+                                        Players</span>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-danger w-100">View Details</a>
                             </div>
-                            <a href="service-details.html" class="btn btn-outline-danger w-100">Access Node</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="puzzle-card">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
-                            alt="Abandoned Ward" class="w-100 object-fit-cover"
-                            style="height: 250px; filter: grayscale(50%) contrast(120%);">
-                        <div class="p-4">
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <img src="assets/img/hero.png"
+                            alt="Echoes in the Dark" class="w-100 object-fit-cover"
+                            style="height: 250px; filter: grayscale(20%) contrast(110%);">
+                        <div class="p-4 d-flex flex-column flex-grow-1">
                             <h4 class="mb-3">Echoes in the Dark</h4>
                             <p class="text-muted small mb-4">Explore the abandoned ward in absolute darkness. Sound
-                                sensors track your movement. Stay quiet.</p>
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <span class="badge" style="background-color: var(--secondary-color);">Medium</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill"
-                                        style="color: var(--secondary-color);"></i> 2-5 Players</span>
+                                sensors track your movement. Stay quiet to survive.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <span class="badge" style="background-color: var(--secondary-color);">Medium</span>
+                                    <span class="small text-muted"><i class="bi bi-people-fill"
+                                            style="color: var(--secondary-color);"></i> 2-5 Players</span>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-secondary w-100">View Details</a>
                             </div>
-                            <a href="service-details.html" class="btn btn-outline-secondary w-100">Access Node</a>
                         </div>
                     </div>
                 </div>
@@ -232,7 +234,7 @@
     <!-- 2. How It Works -->
     <section class="section-padding faq-section">
         <div class="container text-center">
-            <p class="text-primary tracking-widest mb-2">THE PROTOCOL</p>
+            <p class="text-primary tracking-widest mb-2">THE EXPERIENCE</p>
             <h2 class="display-5 mb-5">How To Survive</h2>
             <div class="row g-4 position-relative">
                 <div class="col-md-4 position-relative z-1">
@@ -260,7 +262,7 @@
                         style="background: var(--card-bg); border-color: var(--border-color) !important;">
                         <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4"
                             style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">3</div>
-                        <h4 class="mb-3">Escape The Grid</h4>
+                        <h4 class="mb-3">Escape The Room</h4>
                         <p class="text-muted small mb-0">You have 60 minutes. Use physical interactions, logic, and
                             teamwork to secure freedom.</p>
                     </div>
