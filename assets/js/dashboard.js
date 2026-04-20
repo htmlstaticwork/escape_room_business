@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById('sidebar');
     const sidebarNav = document.getElementById('sidebarNav');
     const sections = document.querySelectorAll('.dashboard-section');
-    const dashboardTitle = document.querySelector('header h2');
+    const dashboardTitle = document.querySelector('.dashboard-top-nav h4');
     
     if (sidebarToggle && sidebar) {
         sidebarToggle.addEventListener('click', () => {
