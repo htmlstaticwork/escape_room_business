@@ -20,10 +20,14 @@
         <!-- Sidebar -->
         <aside class="sidebar-theme border-end d-none d-lg-flex flex-column" id="sidebar"
             style="width: 260px; border-color: var(--border-color) !important;">
-            <div class="p-4 border-bottom" style="border-color: var(--border-color) !important;">
+            <div class="p-4 border-bottom d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                     <i class="bi bi-box-fill"></i> EscapeX
                 </a>
+                <div class="d-flex gap-1">
+                    <button class="rtl-toggle" >RTL</button>
+                    <button class="theme-toggle" ><i class="bi bi-moon-stars-fill"></i></button>
+                </div>
             </div>
 
             <div class="p-4 flex-grow-1">
@@ -52,7 +56,7 @@
                             class="bi bi-calendar-event"></i> My Bookings</a>
                     <a href="#" data-section="waivers" class="nav-link text-muted ps-0 d-flex justify-content-between align-items-center mb-1">
                         <span class="d-flex gap-3"><i class="bi bi-file-earmark-check"></i> Waivers</span>
-                        <span class="badge bg-danger rounded-pill px-2" style="font-size: 0.65rem;">1 Action</span>
+                        <span class="badge bg-primary rounded-pill px-2" style="font-size: 0.65rem;">1 Action</span>
                     </a>
 
                     <small class="text-muted text-uppercase tracking-widest mt-3 mb-2"
@@ -65,23 +69,39 @@
             </div>
 
             <div class="p-4 border-top" style="border-color: var(--border-color) !important;">
-                <a href="login.html" class="btn btn-secondary w-100"><i class="bi bi-power"></i> Log Out</a>
+                <a href="login.html" class="btn btn-primary w-100"><i class="bi bi-power"></i> Log Out</a>
             </div>
         </aside>
 
-        <!-- Main Content -->
-        <main class="flex-grow-1 p-3 p-lg-5 overflow-auto bg-color">
-            <header class="d-flex justify-content-between align-items-center mb-5">
-                <h2 class="mb-0 font-heading">Dashboard Sync</h2>
-                <div class="d-flex gap-3">
-                    <button class="btn p-1 text-theme d-lg-none" id="sidebarToggle"
-                        style="font-size: 2rem; line-height: 1;">
+        <!-- Main Content Area -->
+        <div class="flex-grow-1 d-flex flex-column" style="height: 100vh; overflow: hidden;">
+            <!-- Fixed Top Nav -->
+            <header class="dashboard-top-nav d-flex justify-content-between align-items-center px-4 py-3 border-bottom shadow-sm" 
+                    style="background: var(--card-bg); z-index: 1000; border-color: var(--border-color) !important;">
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn p-1 text-theme d-lg-none" id="sidebarToggle" style="font-size: 1.5rem; line-height: 1;">
                         <i class="bi bi-list"></i>
                     </button>
+                    <h4 class="mb-0 font-heading fs-5">Dashboard Sync</h4>
+                </div>
+                
+                <div class="d-flex align-items-center gap-3">
+                    <div class="corner-controls position-static d-flex gap-2">
+                        <button class="rtl-toggle" >RTL</button>
+                        <button class="theme-toggle" ><i class="bi bi-moon-stars-fill"></i></button>
+                    </div>
+                    <div class="vr mx-2 text-muted opacity-25"></div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="small text-muted d-none d-sm-inline">G.R. Alpha</span>
+                        <div class="bg-primary text-dark rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                            style="width: 32px; height: 32px; font-size: 0.8rem;">GR</div>
+                    </div>
                 </div>
             </header>
 
-            <!-- Content Sections -->
+            <!-- Scrollable Content -->
+            <main class="flex-grow-1 p-3 p-lg-5 overflow-auto bg-color">
+                <!-- Content Sections -->
             <div id="dashboardSections">
                 <!-- Hub Overview Section -->
                 <section id="hub-overview-section" class="dashboard-section active-section">
@@ -102,13 +122,13 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="puzzle-card p-4 h-100">
                                 <h6 class="text-muted mb-2 tracking-widest text-uppercase" style="font-size: 0.7rem;">Win Rate</h6>
-                                <h3 class="mb-0 font-heading text-secondary">75%</h3>
+                                <h3 class="mb-0 font-heading text-primary">75%</h3>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="puzzle-card p-4 border-danger h-100">
+                            <div class="puzzle-card p-4 border-primary h-100">
                                 <h6 class="text-muted mb-2 tracking-widest text-uppercase" style="font-size: 0.7rem;">Next Game</h6>
-                                <h3 class="mb-0 font-heading">OCT 24 <i class="bi bi-exclamation-circle text-danger ms-2 fs-5"></i></h3>
+                                <h3 class="mb-0 font-heading">OCT 24 <i class="bi bi-exclamation-circle text-primary ms-2 fs-5"></i></h3>
                             </div>
                         </div>
                     </div>
@@ -125,17 +145,17 @@
 
                                 <div class="d-flex flex-column flex-md-row gap-4 align-items-center">
                                     <div class="rounded w-100 border border-secondary"
-                                        style="background: url('assets/img/hero.png') center/cover; height: 150px; max-width: 250px;">
+                                        style="background: url('assets/img/room_reactor.png') center/cover; height: 150px; max-width: 250px;">
                                     </div>
                                     <div class="flex-grow-1 w-100">
                                         <h5 class="font-heading mb-1 text-primary">The Reactor Core</h5>
                                         <p class="text-muted small mb-3">Group of 4 • 8:00 PM • Friday, Oct 24</p>
 
-                                        <div class="alert bg-theme-accent border-danger text-theme d-flex flex-column flex-sm-row justify-content-between align-items-sm-center"
+                                        <div class="alert bg-theme-accent border-primary text-theme d-flex flex-column flex-sm-row justify-content-between align-items-sm-center"
                                             role="alert"
                                             style="background: var(--faq-section-bg); border: 1px solid var(--border-color);">
                                             <span class="small mb-2 mb-sm-0"><i
-                                                    class="bi bi-file-earmark-medical text-danger"></i> Group Waiver Signature
+                                                    class="bi bi-file-earmark-medical text-primary"></i> Group Waiver Signature
                                                 Pending</span>
                                             <button class="btn btn-sm btn-outline-primary sign-waiver-btn">Sign Digital
                                                 Waiver</button>
@@ -171,7 +191,7 @@
                                             style="font-size: 0.7rem;">Mission Failed • Sep 05</small>
                                     </div>
                                     <div class="text-end">
-                                        <span class="badge bg-danger d-block mb-1">Failed</span>
+                                        <span class="badge bg-primary d-block mb-1">Failed</span>
                                         <small class="text-theme">Trapped</small>
                                     </div>
                                 </div>
@@ -227,11 +247,11 @@
                                     style="border-color: var(--border-color) !important;">
                                     <i class="bi bi-shield-check text-primary me-2"></i>Compliance Status
                                 </h4>
-                                <div class="bg-theme-accent p-3 rounded border border-warning mb-4"
+                                <div class="bg-theme-accent p-3 rounded border border-primary mb-4"
                                     style="background: rgba(255, 193, 7, 0.05); border: 1px solid var(--border-color) !important;">
-                                    <h6 class="small mb-1 text-warning">Waiver ID: 442-A</h6>
+                                    <h6 class="small mb-1 text-primary">Waiver ID: 442-A</h6>
                                     <div class="progress mb-2" style="height: 6px; background: rgba(0,0,0,0.1);">
-                                        <div class="progress-bar bg-warning" style="width: 75%"></div>
+                                        <div class="progress-bar bg-primary" style="width: 75%"></div>
                                     </div>
                                     <small class="text-muted d-block">3/4 signatures collected</small>
                                 </div>
@@ -246,7 +266,7 @@
                                     </li>
                                     <li class="d-flex justify-content-between align-items-center">
                                         <span>Operative 04 (J.D.)</span>
-                                        <span class="text-danger small"><i class="bi bi-clock"></i> PENDING</span>
+                                        <span class="text-primary small"><i class="bi bi-clock"></i> PENDING</span>
                                     </li>
                                 </ul>
                             </div>
@@ -279,7 +299,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="d-flex align-items-center gap-3">
-                                                        <div class="rounded placeholder-img" style="width: 50px; height: 50px; background: url('assets/img/hero.png') center/cover;"></div>
+                                                        <div class="rounded placeholder-img" style="width: 50px; height: 50px; background: url('assets/img/room_reactor.png') center/cover;"></div>
                                                         <div>
                                                             <h6 class="mb-0 font-heading">The Reactor Core</h6>
                                                             <small class="text-muted">High Difficulty</small>
@@ -288,18 +308,18 @@
                                                 </td>
                                                 <td>Oct 24, 2026 • 8:00 PM</td>
                                                 <td>4 Players</td>
-                                                <td><span class="badge bg-warning text-dark">Confirmed</span></td>
+                                                <td><span class="badge bg-primary text-white">Confirmed</span></td>
                                                 <td class="text-end">
                                                     <div class="d-flex flex-column flex-md-row justify-content-end gap-2">
-                                                        <button class="btn btn-outline-secondary btn-sm">Reschedule</button>
-                                                        <button class="btn btn-outline-danger btn-sm">Cancel</button>
+                                                        <button class="btn btn-outline-primary btn-sm">Reschedule</button>
+                                                        <button class="btn btn-outline-primary btn-sm">Cancel</button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="d-flex align-items-center gap-3">
-                                                        <div class="rounded placeholder-img" style="width: 50px; height: 50px; background: url('assets/img/hero.png') center/cover;"></div>
+                                                        <div class="rounded placeholder-img" style="width: 50px; height: 50px; background: url('assets/img/room_horror.png') center/cover;"></div>
                                                         <div>
                                                             <h6 class="mb-0 font-heading">Cyber Heist</h6>
                                                             <small class="text-muted">Medium Difficulty</small>
@@ -308,11 +328,11 @@
                                                 </td>
                                                 <td>Nov 12, 2026 • 6:30 PM</td>
                                                 <td>6 Players</td>
-                                                <td><span class="badge bg-info text-white">Pending</span></td>
+                                                <td><span class="badge bg-primary text-white">Pending</span></td>
                                                 <td class="text-end">
                                                     <div class="d-flex flex-column flex-md-row justify-content-end gap-2">
-                                                        <button class="btn btn-outline-secondary btn-sm">Reschedule</button>
-                                                        <button class="btn btn-outline-danger btn-sm">Cancel</button>
+                                                        <button class="btn btn-outline-primary btn-sm">Reschedule</button>
+                                                        <button class="btn btn-outline-primary btn-sm">Cancel</button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -338,12 +358,12 @@
                                                 <div>
                                                     <h6 class="mb-1 font-heading">Safety & Liability Waiver - Reactor Core</h6>
                                                     <p class="text-muted small mb-0">Required for mission on Oct 24, 2026</p>
-                                                    <small class="text-danger mt-1 d-block"><i class="bi bi-exclamation-triangle"></i> 1 Team member signature missing</small>
+                                                    <small class="text-primary mt-1 d-block"><i class="bi bi-exclamation-triangle"></i> 1 Team member signature missing</small>
                                                 </div>
                                             </div>
                                             <div class="text-md-end w-100 w-md-auto" style="min-width: 120px;">
                                                 <button class="btn btn-primary btn-sm w-100 mb-2">View Waiver</button>
-                                                <button class="btn btn-outline-secondary btn-sm w-100">Share Link</button>
+                                                <button class="btn btn-outline-primary btn-sm w-100">Share Link</button>
                                             </div>
                                         </div>
                                     </div>
@@ -354,11 +374,11 @@
                                                 <div>
                                                     <h6 class="mb-1 font-heading">General Terms - Cyber Heist</h6>
                                                     <p class="text-muted small mb-0">Completed on Oct 11, 2026</p>
-                                                    <small class="text-success mt-1 d-block"><i class="bi bi-check-circle"></i> All members signed</small>
+                                                    <small class="text-primary mt-1 d-block"><i class="bi bi-check-circle"></i> All members signed</small>
                                                 </div>
                                             </div>
                                             <div class="w-100 w-md-auto" style="min-width: 120px;">
-                                                <button class="btn btn-outline-secondary btn-sm w-100">Download PDF</button>
+                                                <button class="btn btn-outline-primary btn-sm w-100">Download PDF</button>
                                             </div>
                                         </div>
                                     </div>
@@ -398,14 +418,14 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="puzzle-card p-4 text-center border-success h-100">
-                                <h2 class="font-heading text-success mb-1">09</h2>
+                            <div class="puzzle-card p-4 text-center border-primary h-100">
+                                <h2 class="font-heading text-primary mb-1">09</h2>
                                 <p class="text-muted small text-uppercase tracking-widest mb-0">Successful Escapes</p>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="puzzle-card p-4 text-center border-danger h-100">
-                                <h2 class="font-heading text-danger mb-1">03</h2>
+                            <div class="puzzle-card p-4 text-center border-primary h-100">
+                                <h2 class="font-heading text-primary mb-1">03</h2>
                                 <p class="text-muted small text-uppercase tracking-widest mb-0">Mission Failures</p>
                             </div>
                         </div>
@@ -428,7 +448,7 @@
                                     <tr>
                                         <td>Oct 12, 2026</td>
                                         <td><span class="fw-bold font-heading">Cyber Heist</span></td>
-                                        <td><span class="text-warning">Medium</span></td>
+                                        <td><span class="text-primary">Medium</span></td>
                                         <td><span class="badge bg-primary">SUCCESS</span></td>
                                         <td>42:15</td>
                                         <td>2 / 3</td>
@@ -436,15 +456,15 @@
                                     <tr>
                                         <td>Sep 05, 2026</td>
                                         <td><span class="fw-bold font-heading">Asylum 2.0</span></td>
-                                        <td><span class="text-danger">High</span></td>
-                                        <td><span class="badge bg-danger">FAILED</span></td>
+                                        <td><span class="text-primary">High</span></td>
+                                        <td><span class="badge bg-primary">FAILED</span></td>
                                         <td>60:00</td>
                                         <td>3 / 3</td>
                                     </tr>
                                     <tr>
                                         <td>Aug 20, 2026</td>
                                         <td><span class="fw-bold font-heading">The Vault</span></td>
-                                        <td><span class="text-success">Easy</span></td>
+                                        <td><span class="text-primary">Easy</span></td>
                                         <td><span class="badge bg-primary">SUCCESS</span></td>
                                         <td>35:40</td>
                                         <td>0 / 3</td>
@@ -464,12 +484,12 @@
                                     style="border-color: var(--border-color) !important;">
                                     <h4 class="font-heading mb-0"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Global Hall of Fame</h4>
                                     <div class="d-flex gap-2">
-                                        <select class="form-select form-select-sm bg-dark text-white border-secondary" style="width: auto;">
+                                        <select class="form-select form-select-sm bg-dark text-white border-primary" style="width: auto;">
                                             <option>All Rooms</option>
                                             <option>Reactor Core</option>
                                             <option>Cyber Heist</option>
                                         </select>
-                                        <select class="form-select form-select-sm bg-dark text-white border-secondary" style="width: auto;">
+                                        <select class="form-select form-select-sm bg-dark text-white border-primary" style="width: auto;">
                                             <option>This Month</option>
                                             <option>All Time</option>
                                         </select>
@@ -497,7 +517,7 @@
                                                 <td class="text-end text-primary fw-bold">25,400 XP</td>
                                             </tr>
                                             <tr>
-                                                <td><div class="bg-secondary text-dark rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 32px; height: 32px;">2</div></td>
+                                                <td><div class="bg-primary text-dark rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 32px; height: 32px;">2</div></td>
                                                 <td><span class="fw-bold font-heading">Shadow Squad</span></td>
                                                 <td>Cyber Heist</td>
                                                 <td>115</td>

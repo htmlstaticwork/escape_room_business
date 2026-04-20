@@ -41,25 +41,24 @@
                 </ul>
                 <div class="d-flex align-items-center gap-3 navbar-actions">
                     <div class="d-flex align-items-center" style="gap:2px;">
-                        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-text-indent-right"></i></button>
-                        <button class="theme-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+                        <button class="rtl-toggle"
+                            >RTL</button>
+                        <button class="theme-toggle"
+                            ><i class="bi bi-moon-stars-fill"></i></button>
                     </div>
-                    <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Login</a>
                     <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="py-5 text-center border-bottom"
-        style="border-color: var(--border-color) !important; background: var(--hero-overlay), url('assets/img/hero.png') center/cover;">
-        <div class="container py-5">
+    <header class="py-5 text-center border-bottom position-relative"
+        style="border-color: var(--border-color) !important; background-image: var(--hero-overlay), url('assets/img/hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="container py-5 hero-content">
             <p class="text-primary tracking-widest text-uppercase font-heading mb-2">Clearance Levels</p>
-            <h1 class="display-3 font-heading mb-4 text-theme">Secure Your Session</h1>
-            <p class="lead mx-auto text-muted mb-0" style="max-width: 600px;">Access granted based on group size and
+            <h1 class="display-3 font-heading mb-4">Secure Your Session</h1>
+            <p class="lead mx-auto mb-0" style="max-width: 600px;">Access granted based on group size and
                 privacy requirements.</p>
         </div>
     </header>
@@ -118,16 +117,16 @@
                         style="border-color: var(--border-color) !important;">
                         <h4 class="font-heading mb-2">Corp Override</h4>
                         <p class="text-muted small mb-4">Complete facility takeover</p>
-                        <h2 class="display-5 font-heading text-secondary mb-4">Custom</h2>
+                        <h2 class="display-5 font-heading text-primary mb-4">Custom</h2>
                         <ul class="list-unstyled small text-start mb-5">
-                            <li class="mb-3 d-flex gap-2"><i class="bi bi-cpu text-secondary"></i> Simultaneous
+                            <li class="mb-3 d-flex gap-2"><i class="bi bi-cpu text-primary"></i> Simultaneous
                                 multi-room running</li>
-                            <li class="mb-3 d-flex gap-2"><i class="bi bi-graph-up text-secondary"></i> Custom company
+                            <li class="mb-3 d-flex gap-2"><i class="bi bi-graph-up text-primary"></i> Custom company
                                 leaderboard</li>
-                            <li class="mb-3 d-flex gap-2"><i class="bi bi-people text-secondary"></i> Event catering &
+                            <li class="mb-3 d-flex gap-2"><i class="bi bi-people text-primary"></i> Event catering &
                                 debrief area</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-secondary w-100">Request Comms</a>
+                        <a href="contact.html" class="btn btn-primary w-100">Request Comms</a>
                     </div>
                 </div>
 
@@ -182,7 +181,7 @@
         </div>
     </section>
 
-    <section class="section-padding content-section bg-color">
+    <section class="section-padding faq-section">
         <div class="container">
             <div class="row justify-content-center text-center mb-4">
                 <div class="col-lg-8">
@@ -192,8 +191,8 @@
                         keep your account in sync.</p>
                 </div>
             </div>
-            <div class="row faq-section">
-                <div class="col-lg-10 mx-auto">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
                     <div class="accordion" id="pricingFaqAccordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="pricingFaqOne">
@@ -275,13 +274,13 @@
             <div class="row g-5 mb-4">
 
                 <!-- Col 1: Brand -->
-                <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand d-flex align-items-center gap-2 mb-3 h4" href="index.html">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3 h4" href="index.html">
                         <i class="bi bi-box-fill text-primary"></i> EscapeX
                     </a>
-                    <p class="text-muted small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring your
+                    <p class="text-muted small pe-lg-4 mb-4">The next generation of cooperative puzzle-solving. Bring your
                         team, test your minds, escape the grid.</p>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
                         <a href="#"
                             class="btn btn-sm text-theme rounded-circle d-flex align-items-center justify-content-center"
                             style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid var(--border-color);"><i
@@ -302,7 +301,7 @@
                 </div>
 
                 <!-- Col 2: Quick Links -->
-                <div class="col-lg-2 col-md-3 col-6">
+                <div class="col-lg-2 col-md-6 col-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Quick Links</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-2"><a href="index.html" class="text-theme text-decoration-none">Home</a></li>
@@ -316,22 +315,22 @@
                 </div>
 
                 <!-- Col 3: Contact Info -->
-                <div class="col-lg-3 col-md-3 col-6">
+                <div class="col-lg-3 col-md-6 col-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Contact Info</h6>
                     <ul class="list-unstyled small">
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-envelope mt-1 text-primary"></i>
                             <span class="text-theme">info@escapex.io</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2 text-start text-lg-start">
                             <i class="bi bi-geo-alt mt-1 text-primary"></i>
                             <span class="text-theme">Level 4, Sector B<br>Neo-District 9, NY 10001</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-clock mt-1 text-primary"></i>
                             <span class="text-theme">Tue - Sun, 14:00 - 23:00</span>
                         </li>
-                        <li class="d-flex align-items-start gap-2">
+                        <li class="d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-telephone mt-1 text-primary"></i>
                             <span class="text-theme">+1 (800) ESC-A-PEX</span>
                         </li>
@@ -339,10 +338,10 @@
                 </div>
 
                 <!-- Col 4: Newsletter -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-12 text-center text-lg-start">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Newsletter</h6>
                     <p class="text-theme small mb-3">Get hints and early access to new room themes.</p>
-                    <form class="d-flex gap-2 mb-0">
+                    <form class="d-flex gap-2 justify-content-center justify-content-lg-start mb-0">
                         <input type="email" class="form-control form-control-sm footer-newsletter-input"
                             placeholder="Email" required>
                         <button class="btn btn-primary btn-sm px-3" type="submit">Join</button>

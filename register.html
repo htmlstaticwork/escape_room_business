@@ -41,8 +41,8 @@
 
     <!-- Corner Controls -->
     <div class="corner-controls">
-        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-text-indent-right"></i></button>
-        <button class="theme-toggle btn btn-sm btn-link text-theme p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="rtl-toggle" >RTL</button>
+        <button class="theme-toggle" ><i class="bi bi-moon-stars-fill"></i></button>
     </div>
 
     <div class="auth-wrapper px-3">
@@ -57,11 +57,11 @@
 
             <!-- Social -->
             <div class="d-flex gap-3 mb-4">
-                <button class="btn btn-outline-secondary w-50 d-flex align-items-center justify-content-center">
-                    <i class="bi bi-google text-danger me-2"></i> Google
+                <button class="btn btn-outline-primary w-50 d-flex align-items-center justify-content-center gap-2">
+                    <i class="bi bi-google text-primary"></i> Google
                 </button>
-                <button class="btn btn-outline-secondary w-50 d-flex align-items-center justify-content-center">
-                    <i class="bi bi-apple me-2"></i> Apple
+                <button class="btn btn-outline-primary w-50 d-flex align-items-center justify-content-center gap-2">
+                    <i class="bi bi-apple"></i> Apple
                 </button>
             </div>
 
@@ -90,19 +90,26 @@
                     <label class="form-label small text-muted tracking-widest text-uppercase">Secure Code</label>
                     <div class="input-group">
                         <input type="password" class="form-control py-2" id="pwdInputR" required minlength="8">
-                        <button class="btn btn-outline-secondary" type="button" id="togglePwdR"><i
+                        <button class="btn btn-outline-primary" type="button" id="togglePwdR"><i
                                 class="bi bi-eye"></i></button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label small text-muted tracking-widest text-uppercase">Confirm Secure Code</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control py-2" id="pwdConfirmR" required minlength="8">
                     </div>
                 </div>
 
                 <div class="form-check mb-5">
                     <input class="form-check-input bg-transparent border-secondary" type="checkbox" id="terms" required>
                     <label class="form-check-label text-muted small" for="terms">
-                        Acknowledge <a href="#" class="text-primary">Waiver</a>.
+                        Acknowledge <a href="#" class="text-primary">Waiver</a> and <a href="#" class="text-primary">Terms and Conditions</a>.
                     </label>
                 </div>
 
-                <button type="submit" class="btn btn-secondary w-100 tracking-widest py-3">Generate ID</button>
+                <button type="submit" class="btn btn-primary w-100 tracking-widest py-3">Generate ID</button>
             </form>
 
             <div class="text-center mt-5 pt-4 border-top" style="border-color: var(--border-color) !important;">

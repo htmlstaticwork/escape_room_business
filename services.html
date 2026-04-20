@@ -41,12 +41,12 @@
                 </ul>
                 <div class="d-flex align-items-center gap-3 navbar-actions">
                     <div class="d-flex align-items-center" style="gap:2px;">
-                        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-text-indent-right"></i></button>
-                        <button class="theme-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+                        <button class="rtl-toggle"
+                            >RTL</button>
+                        <button class="theme-toggle"
+                            ><i class="bi bi-moon-stars-fill"></i></button>
                     </div>
-                    <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Login</a>
                     <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
                 </div>
             </div>
@@ -54,11 +54,11 @@
     </nav>
 
     <!-- Header -->
-    <header class="py-5 text-center text-white"
-        style="background: linear-gradient(120deg, rgba(0,0,0,0.6) 20%, rgba(7,12,25,0.7) 100%), url('assets/img/hero.png') center/cover;">
-        <div class="container py-5">
+    <header class="py-5 text-center border-bottom position-relative"
+        style="border-color: var(--border-color) !important; background-image: var(--hero-overlay), url('assets/img/hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="container py-5 hero-content">
             <h1 class="display-3 font-heading mb-4">Choose Your Escape</h1>
-            <p class="lead mx-auto text-light mb-0" style="max-width: 600px;">Review the active rooms below. Group
+            <p class="lead mx-auto mb-0" style="max-width: 600px;">Review the active rooms below. Group
                 participation is strictly required.</p>
         </div>
     </header>
@@ -69,9 +69,9 @@
             <!-- Filters -->
             <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
                 <button class="btn btn-primary px-4">All Rooms</button>
-                <button class="btn btn-secondary px-4">Mystery</button>
-                <button class="btn btn-secondary px-4">Adventure</button>
-                <button class="btn btn-secondary px-4">Horror</button>
+                <button class="btn btn-primary px-4">Mystery</button>
+                <button class="btn btn-primary px-4">Adventure</button>
+                <button class="btn btn-primary px-4">Horror</button>
             </div>
 
             <div class="row g-5 justify-content-center">
@@ -83,7 +83,7 @@
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between mb-3">
-                                <span class="badge bg-secondary font-heading">Theme: Mystery</span>
+                                <span class="badge bg-primary font-heading">Theme: Mystery</span>
                                 <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 4-8
                                     Players</span>
                             </div>
@@ -102,13 +102,13 @@
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between mb-3">
-                                <span class="badge bg-danger font-heading">Theme: Adventure</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 6-10
+                                <span class="badge bg-primary font-heading">Theme: Adventure</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 6-10
                                     Players</span>
                             </div>
                             <h4 class="font-heading">The Forgotten Tomb</h4>
                             <p class="text-muted small mb-4 flex-grow-1">Navigate ancient Egyptian ruins and decipher physical stone puzzles to unlock the secrets of the pharaoh.</p>
-                            <a href="service-details.html" class="btn btn-outline-danger w-100 mt-auto">Examine Details</a>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
                         </div>
                     </div>
                 </div>
@@ -117,19 +117,19 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="puzzle-card h-100 d-flex flex-column">
                         <div class="w-100"
-                            style="height: 250px; background: url('assets/img/hero.png') center/cover;">
+                            style="height: 250px; background: url('assets/img/room_horror.png') center/cover;">
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between mb-3">
-                                <span class="badge" style="background-color: var(--secondary-color);">Theme:
+                                <span class="badge" style="background-color: var(--primary-color);">Theme:
                                     Horror</span>
                                 <span class="small text-muted"><i class="bi bi-people-fill"
-                                        style="color: var(--secondary-color);"></i> 2-5 Players</span>
+                                        style="color: var(--primary-color);"></i> 2-5 Players</span>
                             </div>
                             <h4 class="font-heading">Echoes in the Dark</h4>
                             <p class="text-muted small mb-4 flex-grow-1">Explore the abandoned ward in absolute darkness. Sound
                                 sensors track your movement. Stay quiet, stay together.</p>
-                            <a href="service-details.html" class="btn btn-outline-secondary w-100 mt-auto">Examine Details</a>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
                         </div>
                     </div>
                 </div>
@@ -246,13 +246,13 @@
             <div class="row g-5 mb-4">
 
                 <!-- Col 1: Brand -->
-                <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand text-white d-flex align-items-center gap-2 mb-3 h4" href="index.html">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <a class="navbar-brand text-white d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3 h4" href="index.html">
                         <i class="bi bi-box-fill text-primary"></i> EscapeX
                     </a>
-                    <p class="text-white-50 small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring
+                    <p class="text-white-50 small pe-lg-4 mb-4">The next generation of cooperative puzzle-solving. Bring
                         your team, test your minds, escape the grid.</p>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
                         <a href="#"
                             class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
                             style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
@@ -273,7 +273,7 @@
                 </div>
 
                 <!-- Col 2: Quick Links -->
-                <div class="col-lg-2 col-md-3 col-6">
+                <div class="col-lg-2 col-md-6 col-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Quick Links</h6>
                     <ul class="list-unstyled text-white-50 small">
                         <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
@@ -289,22 +289,22 @@
                 </div>
 
                 <!-- Col 3: Contact Info -->
-                <div class="col-lg-3 col-md-3 col-6">
+                <div class="col-lg-3 col-md-6 col-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Contact Info</h6>
                     <ul class="list-unstyled text-white-50 small">
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-envelope mt-1 text-primary"></i>
                             <span class="text-white-50">info@escapex.io</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2 text-start text-lg-start">
                             <i class="bi bi-geo-alt mt-1 text-primary"></i>
                             <span class="text-white-50">Level 4, Sector B<br>Neo-District 9, NY 10001</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-clock mt-1 text-primary"></i>
                             <span class="text-white-50">Tue - Sun, 14:00 - 23:00</span>
                         </li>
-                        <li class="d-flex align-items-start gap-2">
+                        <li class="d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-telephone mt-1 text-primary"></i>
                             <span class="text-white-50">+1 (800) ESC-A-PEX</span>
                         </li>
@@ -312,10 +312,10 @@
                 </div>
 
                 <!-- Col 4: Newsletter -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-12 text-center text-lg-start">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Newsletter</h6>
                     <p class="text-white-50 small mb-3">Get hints and early access to new room themes.</p>
-                    <form class="d-flex gap-2 mb-0">
+                    <form class="d-flex gap-2 justify-content-center justify-content-lg-start mb-0">
                         <input type="email" class="form-control form-control-sm footer-newsletter-input"
                             placeholder="Email" required>
                         <button class="btn btn-primary btn-sm px-3" type="submit">Join</button>

@@ -51,12 +51,12 @@
                 </ul>
                 <div class="d-flex align-items-center gap-3 navbar-actions">
                     <div class="d-flex align-items-center" style="gap:2px;">
-                        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-text-indent-right"></i></button>
-                        <button class="theme-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+                        <button class="rtl-toggle"
+                            >RTL</button>
+                        <button class="theme-toggle"
+                            ><i class="bi bi-moon-stars-fill"></i></button>
                     </div>
-                    <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Login</a>
                     <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
                 </div>
             </div>
@@ -65,8 +65,8 @@
 
     <!-- Hero Section -->
     <section class="section-padding min-vh-100 d-flex align-items-center position-relative"
-        style="background: var(--hero-overlay), url('assets/img/hero.png') center/cover;">
-        <div class="container text-center position-relative" style="z-index: 2; color: var(--text-color);">
+        style="background-image: var(--hero-overlay), url('assets/img/hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="container text-center position-relative hero-content" style="z-index: 2;">
             <p class="text-primary tracking-widest mb-3">YOUR MIND IS THE ONLY KEY</p>
             <h1 class="display-3 mb-4" style="text-shadow: 0 0 20px rgba(0, 255, 204, 0.4);">Decode. Escape. Survive.
             </h1>
@@ -75,12 +75,8 @@
             <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 align-items-center">
                 <a href="services.html" class="btn btn-primary btn-lg px-4 hero-cta-btn"><i
                         class="bi bi-geo-alt-fill me-2"></i> Choose Room</a>
-                <a href="about.html" class="btn btn-secondary btn-lg px-4 hero-cta-btn">How It Works</a>
+                <a href="about.html" class="btn btn-primary btn-lg px-4 hero-cta-btn">How It Works</a>
             </div>
-        </div>
-        <!-- Overlay -->
-        <div class="position-absolute top-0 start-0 w-100 h-100"
-            style="background: rgba(0,0,0,0.4); z-index: 1;">
         </div>
     </section>
 
@@ -118,7 +114,7 @@
                             </div>
                         </div>
                         <div class="col-6 mt-5">
-                            <div class="overflow-hidden rounded border border-danger shadow-lg">
+                            <div class="overflow-hidden rounded border border-primary shadow-lg">
                                 <img src="assets/img/room_detective.png" alt="Detective Mystery Room" class="img-fluid interactive-img w-100 object-fit-cover" style="height: 420px; filter: grayscale(10%) contrast(110%);">
                             </div>
                         </div>
@@ -179,7 +175,7 @@
                             <p class="text-muted small mb-4">Step into a 1920s detective agency. Uncover the clues, connect strings on the evidence board, and solve the mystery.</p>
                             <div class="mt-auto">
                                 <div class="d-flex justify-content-between align-items-center mb-4">
-                                    <span class="badge bg-secondary">Medium</span>
+                                    <span class="badge bg-primary">Medium</span>
                                     <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 4-8
                                         Players</span>
                                 </div>
@@ -198,18 +194,18 @@
                             <p class="text-muted small mb-4">Navigate ancient Egyptian ruins and decipher physical stone puzzles to unlock the secrets of the pharaoh.</p>
                             <div class="mt-auto">
                                 <div class="d-flex justify-content-between align-items-center mb-4">
-                                    <span class="badge bg-danger">Extreme</span>
-                                    <span class="small text-muted"><i class="bi bi-people-fill text-danger"></i> 6-10
+                                    <span class="badge bg-primary">Extreme</span>
+                                    <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 6-10
                                         Players</span>
                                 </div>
-                                <a href="service-details.html" class="btn btn-outline-danger w-100">View Details</a>
+                                <a href="service-details.html" class="btn btn-outline-primary w-100">View Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="puzzle-card h-100 d-flex flex-column">
-                        <img src="assets/img/hero.png"
+                        <img src="assets/img/room_horror.png"
                             alt="Echoes in the Dark" class="w-100 object-fit-cover"
                             style="height: 250px; filter: grayscale(20%) contrast(110%);">
                         <div class="p-4 d-flex flex-column flex-grow-1">
@@ -218,11 +214,11 @@
                                 sensors track your movement. Stay quiet to survive.</p>
                             <div class="mt-auto">
                                 <div class="d-flex justify-content-between align-items-center mb-4">
-                                    <span class="badge" style="background-color: var(--secondary-color);">Medium</span>
+                                    <span class="badge" style="background-color: var(--primary-color);">Medium</span>
                                     <span class="small text-muted"><i class="bi bi-people-fill"
-                                            style="color: var(--secondary-color);"></i> 2-5 Players</span>
+                                            style="color: var(--primary-color);"></i> 2-5 Players</span>
                                 </div>
-                                <a href="service-details.html" class="btn btn-outline-secondary w-100">View Details</a>
+                                <a href="service-details.html" class="btn btn-outline-primary w-100">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -311,7 +307,7 @@
     </section>
 
     <!-- 4. FAQ Intel -->
-    <section class="section-padding" style="background-color: var(--bg-color);">
+    <section class="section-padding faq-section" style="background-color: var(--bg-color);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -320,7 +316,7 @@
                         <h2 class="display-5">FAQ / Intel</h2>
                     </div>
                     <div class="accordion" id="intelAccordion">
-                        <div class="accordion-item bg-transparent">
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed font-heading tracking-widest text-uppercase"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
@@ -335,7 +331,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bg-transparent">
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed font-heading tracking-widest text-uppercase"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
@@ -350,7 +346,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bg-transparent">
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed font-heading tracking-widest text-uppercase"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
@@ -379,13 +375,13 @@
             <div class="row g-5 mb-4">
 
                 <!-- Col 1: Brand -->
-                <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand text-white d-flex align-items-center gap-2 mb-3 h4" href="index.html">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <a class="navbar-brand text-white d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3 h4" href="index.html">
                         <i class="bi bi-box-fill text-primary"></i> EscapeX
                     </a>
-                    <p class="text-muted small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring your
+                    <p class="text-muted small pe-lg-4 mb-4">The next generation of cooperative puzzle-solving. Bring your
                         team, test your minds, escape the grid.</p>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
                         <a href="#"
                             class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
                             style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
@@ -406,7 +402,7 @@
                 </div>
 
                 <!-- Col 2: Quick Links -->
-                <div class="col-lg-2 col-md-3 col-6">
+                <div class="col-lg-2 col-md-6 col-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Quick Links</h6>
                     <ul class="list-unstyled text-white-50 small">
                         <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
@@ -422,22 +418,22 @@
                 </div>
 
                 <!-- Col 3: Contact Info -->
-                <div class="col-lg-3 col-md-3 col-6">
+                <div class="col-lg-3 col-md-6 col-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Contact Info</h6>
                     <ul class="list-unstyled text-white-50 small">
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-envelope mt-1 text-primary"></i>
                             <span class="text-white-50">info@escapex.io</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2 text-start text-lg-start">
                             <i class="bi bi-geo-alt mt-1 text-primary"></i>
                             <span class="text-white-50">Level 4, Sector B<br>Neo-District 9, NY 10001</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-clock mt-1 text-primary"></i>
                             <span class="text-white-50">Tue - Sun, 14:00 - 23:00</span>
                         </li>
-                        <li class="d-flex align-items-start gap-2">
+                        <li class="d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-telephone mt-1 text-primary"></i>
                             <span class="text-white-50">+1 (800) ESC-A-PEX</span>
                         </li>
@@ -445,10 +441,10 @@
                 </div>
 
                 <!-- Col 4: Newsletter -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-12 text-center text-lg-start">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Newsletter</h6>
                     <p class="text-muted small mb-3">Get hints and early access to new room themes.</p>
-                    <form class="d-flex gap-2 mb-0">
+                    <form class="d-flex gap-2 justify-content-center justify-content-lg-start mb-0">
                         <input type="email" class="form-control form-control-sm footer-newsletter-input"
                             placeholder="Email" required>
                         <button class="btn btn-primary btn-sm px-3" type="submit">Join</button>

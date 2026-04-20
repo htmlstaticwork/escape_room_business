@@ -18,8 +18,8 @@
     
     <!-- Corner Controls -->
     <div class="corner-controls">
-        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-text-indent-right"></i></button>
-        <button class="theme-toggle btn btn-sm btn-link text-theme p-1" style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+        <button class="rtl-toggle" >RTL</button>
+        <button class="theme-toggle" ><i class="bi bi-moon-stars-fill"></i></button>
     </div>
 
 
@@ -35,18 +35,18 @@
             </div>
 
             <!-- Social -->
-            <div class="d-flex flex-column gap-3 mb-4">
-                <button class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2">
-                    <i class="bi bi-google text-danger"></i> Link via Google
+            <div class="d-flex gap-3 mb-4">
+                <button class="btn btn-outline-primary w-50 d-flex align-items-center justify-content-center gap-2">
+                    <i class="bi bi-google text-primary"></i> Google
                 </button>
-                <button class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2">
-                    <i class="bi bi-apple"></i> Link via Apple
+                <button class="btn btn-outline-primary w-50 d-flex align-items-center justify-content-center gap-2">
+                    <i class="bi bi-apple"></i> Apple
                 </button>
             </div>
 
             <div class="d-flex align-items-center mb-4 text-muted small">
                 <hr class="flex-grow-1" style="border-color: var(--border-color) !important; opacity: 1;">
-                <span class="px-3 tracking-widest">OR SCAN</span>
+                <span class="px-3 tracking-widest uppercase">OR MANUAL</span>
                 <hr class="flex-grow-1" style="border-color: var(--border-color) !important; opacity: 1;">
             </div>
 
@@ -60,16 +60,16 @@
                     <label class="form-label small text-muted tracking-widest text-uppercase">Passcode</label>
                     <div class="input-group">
                         <input type="password" class="form-control py-2" id="pwdInput" required>
-                        <button class="btn btn-outline-secondary" type="button" id="togglePwd"><i class="bi bi-eye"></i></button>
+                        <button class="btn btn-outline-primary" type="button" id="togglePwd"><i class="bi bi-eye"></i></button>
                     </div>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <div class="form-check">
-                        <input class="form-check-input bg-transparent border-secondary" type="checkbox" id="persist">
+                        <input class="form-check-input bg-transparent border-primary" type="checkbox" id="persist">
                         <label class="form-check-label text-muted small" for="persist">Persist Log</label>
                     </div>
-                    <a href="#" class="text-primary small text-decoration-none">Bypass Lock?</a>
+                    <a href="#" class="text-primary small text-decoration-none">Forgot Password?</a>
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100 tracking-widest py-3">Initiate Link</button>

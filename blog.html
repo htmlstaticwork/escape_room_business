@@ -40,21 +40,21 @@
                 </ul>
                 <div class="d-flex align-items-center gap-3 navbar-actions">
                     <div class="d-flex align-items-center" style="gap:2px;">
-                        <button class="rtl-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-text-indent-right"></i></button>
-                        <button class="theme-toggle btn btn-sm btn-link text-theme p-1"
-                            style="font-size:1.1rem; line-height:1;"><i class="bi bi-moon-stars-fill"></i></button>
+                        <button class="rtl-toggle"
+                            >RTL</button>
+                        <button class="theme-toggle"
+                            ><i class="bi bi-moon-stars-fill"></i></button>
                     </div>
-                    <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+                    <a href="login.html" class="btn btn-primary btn-sm">Login</a>
                     <a href="dashboard.html" class="btn btn-primary btn-sm">Dashboard</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="py-5 text-center text-white border-bottom"
-        style="border-color: var(--border-color) !important; background: linear-gradient(120deg, rgba(0,0,0,0.98), rgba(12,12,12,1)), url('assets/img/hero.png') center/cover;">
-        <div class="container py-5">
+    <header class="py-5 text-center border-bottom position-relative"
+        style="border-color: var(--border-color) !important; background-image: var(--hero-overlay), url('assets/img/blog_hero.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="container py-5 hero-content">
             <p class="text-primary tracking-widest text-uppercase font-heading mb-2">Secured Archives</p>
             <h1 class="display-3 font-heading mb-4">Facility Logs</h1>
         </div>
@@ -83,7 +83,7 @@
                             style="height: 200px; background: url('assets/img/room_detective.png') center/cover;">
                         </div>
                         <div class="p-4 bg-dark d-flex flex-column flex-grow-1">
-                            <span class="badge text-bg-secondary tracking-widest text-uppercase mb-2 mb-3">Intel</span>
+                            <span class="badge text-bg-primary tracking-widest text-uppercase mb-2 mb-3">Intel</span>
                             <h4 class="font-heading mb-3"><a href="blog-details.html"
                                     class="text-white text-decoration-none">The Isolation Chamber</a></h4>
                             <p class="text-muted small mb-0">A brief look at the psychological mechanics driving our
@@ -114,7 +114,7 @@
                                 style="object-position: center;">
                         </div>
                         <div class="p-4 bg-dark d-flex flex-column flex-grow-1">
-                            <span class="badge text-bg-warning tracking-widest text-uppercase mb-2 mb-3">Site
+                            <span class="badge text-bg-primary tracking-widest text-uppercase mb-2 mb-3">Site
                                 Intel</span>
                             <h4 class="font-heading mb-3"><a href="blog-details.html"
                                     class="text-white text-decoration-none">Analytics Feed</a></h4>
@@ -147,7 +147,7 @@
                         </div>
                         <div class="p-4 bg-dark d-flex flex-column flex-grow-1">
                             <span
-                                class="badge text-bg-warning tracking-widest text-uppercase mb-2 mb-3">Community</span>
+                                class="badge text-bg-primary tracking-widest text-uppercase mb-2 mb-3">Community</span>
                             <h4 class="font-heading mb-3"><a href="blog-details.html"
                                     class="text-white text-decoration-none">Community Brief</a></h4>
                             <p class="text-muted small mb-0">Monthly recaps pulled straight from the portal’s community
@@ -159,7 +159,7 @@
         </div>
     </section>
 
-    <section class="section-padding bg-color">
+    <section class="section-padding faq-section">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-8 text-center">
@@ -170,9 +170,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-8 mx-auto">
                     <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item mb-3">
+                        <div class="accordion-item">
                             <h2 class="accordion-header" id="faqHeadingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
@@ -188,7 +188,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item mb-3">
+                        <div class="accordion-item">
                             <h2 class="accordion-header" id="faqHeadingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
@@ -204,7 +204,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item mb-3">
+                        <div class="accordion-item">
                             <h2 class="accordion-header" id="faqHeadingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
@@ -332,13 +332,13 @@
             <div class="row g-5 mb-4">
 
                 <!-- Col 1: Brand -->
-                <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand text-white d-flex align-items-center gap-2 mb-3 h4" href="index.html">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <a class="navbar-brand text-white d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3 h4" href="index.html">
                         <i class="bi bi-box-fill text-primary"></i> EscapeX
                     </a>
-                    <p class="text-white-50 small pe-4 mb-4">The next generation of cooperative puzzle-solving. Bring
+                    <p class="text-white-50 small pe-lg-4 mb-4">The next generation of cooperative puzzle-solving. Bring
                         your team, test your minds, escape the grid.</p>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
                         <a href="#"
                             class="btn btn-sm text-white rounded-circle d-flex align-items-center justify-content-center"
                             style="width:38px;height:38px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);"><i
@@ -359,7 +359,7 @@
                 </div>
 
                 <!-- Col 2: Quick Links -->
-                <div class="col-lg-2 col-md-3 col-6">
+                <div class="col-lg-2 col-md-6 col-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Quick Links</h6>
                     <ul class="list-unstyled text-white-50 small">
                         <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
@@ -375,22 +375,22 @@
                 </div>
 
                 <!-- Col 3: Contact Info -->
-                <div class="col-lg-3 col-md-3 col-6">
+                <div class="col-lg-3 col-md-6 col-6 text-center text-lg-start mb-4 mb-lg-0">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Contact Info</h6>
                     <ul class="list-unstyled text-white-50 small">
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-envelope mt-1 text-primary"></i>
                             <span class="text-white-50">info@escapex.io</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2 text-start text-lg-start">
                             <i class="bi bi-geo-alt mt-1 text-primary"></i>
                             <span class="text-white-50">Level 4, Sector B<br>Neo-District 9, NY 10001</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-start gap-2">
+                        <li class="mb-3 d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-clock mt-1 text-primary"></i>
                             <span class="text-white-50">Tue - Sun, 14:00 - 23:00</span>
                         </li>
-                        <li class="d-flex align-items-start gap-2">
+                        <li class="d-flex align-items-start justify-content-center justify-content-lg-start gap-2">
                             <i class="bi bi-telephone mt-1 text-primary"></i>
                             <span class="text-white-50">+1 (800) ESC-A-PEX</span>
                         </li>
@@ -398,10 +398,10 @@
                 </div>
 
                 <!-- Col 4: Newsletter -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-12 text-center text-lg-start">
                     <h6 class="mb-3 tracking-widest text-primary text-uppercase">Newsletter</h6>
                     <p class="text-white-50 small mb-3">Get hints and early access to new room themes.</p>
-                    <form class="d-flex gap-2 mb-0">
+                    <form class="d-flex gap-2 justify-content-center justify-content-lg-start mb-0">
                         <input type="email" class="form-control form-control-sm footer-newsletter-input"
                             placeholder="Email" required>
                         <button class="btn btn-primary btn-sm px-3" type="submit">Join</button>
