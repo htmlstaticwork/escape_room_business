@@ -1,11 +1,10 @@
 :root {
   /* Branding Colors - Mysterious & Exciting */
-  --primary-color: #00ffcc;
-  /* Neon Teal for active elements */
-  --secondary-color: #8a2be2;
-  /* Deep Purple for mysterious vibes */
-  --accent-color: #ff0055;
-  /* Neon Pink/Red for urgency/warnings */
+  --primary-color: #2563eb;
+  /* Safer blue for light mode readability */
+  --secondary-color: var(--primary-color);
+  --accent-color: var(--primary-color);
+  /* Use primary for accents to keep it unified */
 
   /* Light Mode (default but strongly themed) */
   --bg-color: #ffffff;
@@ -22,7 +21,7 @@
   --faq-accordion-text: #0f172a;
   --faq-accordion-body-bg: #fdfdff;
   --faq-accordion-body-text: #1e293b;
-  --hero-overlay: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+  --hero-overlay: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8));
 
   /* Spacing System (8px based) */
   --spacing-1: 8px;
@@ -48,6 +47,8 @@
   --muted-color: rgba(255, 255, 255, 0.6);
   --primary-color: #00ffcc;
   /* Back to neon for dark mode */
+  --secondary-color: var(--primary-color);
+  --accent-color: var(--primary-color);
   --faq-section-bg: #02050f;
   --faq-accordion-bg: #10182a;
   --faq-accordion-hover: #060d1c;
@@ -55,7 +56,7 @@
   --faq-accordion-text: #e2e8f0;
   --faq-accordion-body-bg: #050a14;
   --faq-accordion-body-text: #cbd5f5;
-  --hero-overlay: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.95));
+  --hero-overlay: linear-gradient(rgba(5, 5, 5, 0.5), rgba(5, 5, 5, 0.7));
 }
 
 /* Reset & Base */
@@ -98,6 +99,33 @@ a {
   transition: color 0.3s ease;
 }
 
+/* RTL & Theme Toggle Button Styling */
+.rtl-toggle,
+.theme-toggle {
+  font-size: 0.75rem !important;
+  font-weight: 800 !important;
+  width: 32px;
+  height: 32px;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  background-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+  transition: all 0.3s ease;
+  line-height: 1;
+  border: none !important;
+}
+
+.rtl-toggle:hover,
+.theme-toggle:hover {
+  background-color: var(--primary-color) !important;
+  color: #000 !important;
+  transform: scale(1.1);
+}
+
 a:hover {
   color: var(--secondary-color);
 }
@@ -109,6 +137,20 @@ a:hover {
 
 .tracking-widest {
   letter-spacing: 3px;
+}
+
+.hero-content {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content .text-primary {
+  color: #00ffcc !important;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+.hero-content p.lead {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .section-padding.content-section {
@@ -529,21 +571,33 @@ footer .d-flex.gap-2 a.btn.rounded-circle:hover {
   background-color: var(--faq-section-bg);
 }
 
+.faq-section .accordion-item {
+  background: transparent;
+  border: none;
+  margin-bottom: 1.25rem;
+}
+
 .faq-section .accordion-button {
   background: var(--faq-accordion-bg);
   color: var(--faq-accordion-text);
   border: 1px solid var(--faq-accordion-border);
-  border-radius: 0.45rem;
-  margin-bottom: 0.4rem;
+  border-radius: 0.5rem !important;
+  transition: all 0.3s ease;
 }
 
 .faq-section .accordion-button:not(.collapsed) {
   background: var(--faq-accordion-hover);
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 .faq-section .accordion-button::after {
-  filter: invert(100%);
+  filter: invert(1) brightness(0.5);
+}
+
+[data-theme="dark"] .faq-section .accordion-button::after {
+  filter: invert(0) brightness(1);
 }
 
 .faq-section .accordion-body {
@@ -551,6 +605,9 @@ footer .d-flex.gap-2 a.btn.rounded-circle:hover {
   color: var(--faq-accordion-body-text);
   border: 1px solid var(--faq-accordion-border);
   border-top: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1.5rem;
 }
 
 .text-theme {
@@ -558,6 +615,16 @@ footer .d-flex.gap-2 a.btn.rounded-circle:hover {
 }
 
 /* Back to Top Button */
+/* Corner Controls for Auth Pages */
+.corner-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 1000;
+}
+
 #backToTop {
   position: fixed;
   bottom: 25px;
