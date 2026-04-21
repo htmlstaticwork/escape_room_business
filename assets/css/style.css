@@ -163,11 +163,11 @@ a:hover {
 }
 
 .content-section .puzzle-card .text-muted {
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--muted-color);
 }
 
 [data-theme="light"] .content-section .puzzle-card .text-muted small {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--muted-color);
 }
 
 /* Survivor Logs section background override */
