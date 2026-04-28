@@ -55,7 +55,7 @@
 
     <!-- Header -->
     <header class="py-5 text-center border-bottom position-relative"
-        style="border-color: var(--border-color) !important; background-image: var(--hero-overlay), url('assets/img/room_reactor.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        style="border-color: var(--border-color) !important; background-image: var(--hero-overlay), url('assets/img/room_underwater.png'); background-position: center; background-size: cover; background-repeat: no-repeat;">
         <div class="container py-5 hero-content">
             <h1 class="display-3 font-heading mb-4">Choose Your Escape</h1>
             <p class="lead mx-auto mb-0" style="max-width: 600px;">Review the active rooms below. Group
@@ -68,18 +68,18 @@
 
             <!-- Filters -->
             <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
-                <button class="btn btn-primary px-4">All Rooms</button>
-                <button class="btn btn-primary px-4">Mystery</button>
-                <button class="btn btn-primary px-4">Adventure</button>
-                <button class="btn btn-primary px-4">Horror</button>
+                <button class="btn btn-primary px-4 filter-btn active" data-filter="all">All Rooms</button>
+                <button class="btn btn-primary px-4 filter-btn" data-filter="mystery">Mystery</button>
+                <button class="btn btn-primary px-4 filter-btn" data-filter="adventure">Adventure</button>
+                <button class="btn btn-primary px-4 filter-btn" data-filter="horror">Horror</button>
             </div>
 
-            <div class="row g-5 justify-content-center">
-                <!-- Room 1 -->
-                <div class="col-lg-4 col-md-6">
+            <div class="row g-5 justify-content-center" id="rooms-container">
+                <!-- Mystery 1 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="mystery">
                     <div class="puzzle-card h-100 d-flex flex-column">
                         <div class="w-100"
-                            style="height: 250px; background: url('assets/img/room_detective.png') center/cover;">
+                            style="height: 250px; background: url('assets/img/room_museum.png') center/cover;">
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between mb-3">
@@ -94,11 +94,49 @@
                     </div>
                 </div>
 
-                <!-- Room 2 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- Mystery 2 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="mystery">
                     <div class="puzzle-card h-100 d-flex flex-column">
                         <div class="w-100"
-                            style="height: 250px; background: url('assets/img/room_tomb.png') center/cover;">
+                            style="height: 250px; background: url('assets/img/room_gallery.png') center/cover;">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary font-heading">Theme: Mystery</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 2-6
+                                    Players</span>
+                            </div>
+                            <h4 class="font-heading">The Stolen Canvas</h4>
+                            <p class="text-muted small mb-4 flex-grow-1">A priceless painting has vanished from the Grand Gallery. You have 60 minutes to identify the thief and recover the art.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mystery 3 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="mystery">
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <div class="w-100"
+                            style="height: 250px; background: url('assets/img/room_office.png') center/cover;">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary font-heading">Theme: Mystery</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 4-10
+                                    Players</span>
+                            </div>
+                            <h4 class="font-heading">Corporate Espionage</h4>
+                            <p class="text-muted small mb-4 flex-grow-1">Infiltrate a high-security office and retrieve the encrypted hard drive before the security team returns.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure 1 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="adventure">
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <div class="w-100"
+                            style="height: 250px; background: url('assets/img/room_prison.png') center/cover;">
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between mb-3">
@@ -113,22 +151,96 @@
                     </div>
                 </div>
 
-                <!-- Room 3 -->
-                <div class="col-lg-4 col-md-6">
+                <!-- Adventure 2 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="adventure">
                     <div class="puzzle-card h-100 d-flex flex-column">
                         <div class="w-100"
-                            style="height: 250px; background: url('assets/img/room_horror.png') center/cover;">
+                            style="height: 250px; background: url('assets/img/room_mine.png') center/cover;">
                         </div>
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between mb-3">
-                                <span class="badge" style="background-color: var(--primary-color);">Theme:
-                                    Horror</span>
-                                <span class="small text-muted"><i class="bi bi-people-fill"
-                                        style="color: var(--primary-color);"></i> 2-5 Players</span>
+                                <span class="badge bg-primary font-heading">Theme: Adventure</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 4-8
+                                    Players</span>
+                            </div>
+                            <h4 class="font-heading">Lost Mine of Gold</h4>
+                            <p class="text-muted small mb-4 flex-grow-1">Descend into an abandoned gold mine. Find the legendary vein and escape before the shaft collapses.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure 3 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="adventure">
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <div class="w-100"
+                            style="height: 250px; background: url('assets/img/room_temple.png') center/cover;">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary font-heading">Theme: Adventure</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 2-6
+                                    Players</span>
+                            </div>
+                            <h4 class="font-heading">The Jungle Temple</h4>
+                            <p class="text-muted small mb-4 flex-grow-1">Face the trials of the Jungle Temple. Only the bravest will survive the mechanical traps and find the ancient idol.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horror 1 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="horror">
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <div class="w-100"
+                            style="height: 250px; background: url('assets/img/room_train.png') center/cover;">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary font-heading">Theme: Horror</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 2-5
+                                    Players</span>
                             </div>
                             <h4 class="font-heading">Echoes in the Dark</h4>
-                            <p class="text-muted small mb-4 flex-grow-1">Explore the abandoned ward in absolute darkness. Sound
-                                sensors track your movement. Stay quiet, stay together.</p>
+                            <p class="text-muted small mb-4 flex-grow-1">Explore the abandoned ward in absolute darkness. Sound sensors track your movement. Stay quiet, stay together.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horror 2 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="horror">
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <div class="w-100"
+                            style="height: 250px; background: url('assets/img/room_circus.png') center/cover;">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary font-heading">Theme: Horror</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 4-8
+                                    Players</span>
+                            </div>
+                            <h4 class="font-heading">The Cursed Circus</h4>
+                            <p class="text-muted small mb-4 flex-grow-1">Step into a nightmare carnival. Face your fears and solve the ringmaster's deadly puzzles to escape.</p>
+                            <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horror 3 -->
+                <div class="col-lg-4 col-md-6 room-card" data-category="horror">
+                    <div class="puzzle-card h-100 d-flex flex-column">
+                        <div class="w-100"
+                            style="height: 250px; background: url('assets/img/room_haunted.png') center/cover;">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="badge bg-primary font-heading">Theme: Horror</span>
+                                <span class="small text-muted"><i class="bi bi-people-fill text-primary"></i> 2-4
+                                    Players</span>
+                            </div>
+                            <h4 class="font-heading">The Poltergeist House</h4>
+                            <p class="text-muted small mb-4 flex-grow-1">A family disappeared from this house. Investigate the paranormal activity and banish the spirit before it's too late.</p>
                             <a href="service-details.html" class="btn btn-outline-primary w-100 mt-auto">Examine Details</a>
                         </div>
                     </div>
@@ -229,7 +341,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="puzzle-card p-4 h-100 text-center">
-                        <img src="assets/img/security.png" alt="Security Audits" class="img-fluid mb-4"
+                        <img src="assets/img/room_circus.png" alt="Security Audits" class="img-fluid mb-4"
                             style="width: 140px; height: 140px; object-fit: contain; filter: drop-shadow(0 0 12px rgba(0, 255, 204, 0.5));">
                         <h5 class="mb-2">Security Audits</h5>
                         <p class="text-muted small">Access compliance reports, privacy settings, and emergency protocols

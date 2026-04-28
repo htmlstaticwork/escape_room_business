@@ -262,6 +262,13 @@ a:hover {
   text-shadow: none !important;
 }
 
+[data-theme="light"] .navbar-brand,
+[data-theme="light"] .navbar-brand i {
+  font-weight: 900 !important;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2) !important;
+  filter: brightness(0.95);
+}
+
 .navbar-brand i,
 .navbar-brand:hover i {
   color: var(--brand-primary) !important;
@@ -809,4 +816,5 @@ footer .d-flex.gap-2 a.btn.rounded-circle:hover {
   .dashboard-section h4 {
     font-size: 1.1rem;
   }
-}
+}@ k e y f r a m e s   f a d e I n   {   f r o m   {   o p a c i t y :   0 ;   t r a n s f o r m :   t r a n s l a t e Y ( 1 0 p x ) ;   }   t o   {   o p a c i t y :   1 ;   t r a n s f o r m :   t r a n s l a t e Y ( 0 ) ;   }   }  
+ 
